@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #ffffff;
@@ -12,15 +13,69 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #000000; /* Force black text for brutalism */
+
+  font-family: var(--font-space), Arial, sans-serif;
 }
+
+@theme {
+  --font-kalam: var(--font-kalam);
+}
+
+.font-kalam {
+  font-family: var(--font-kalam), cursive;
+}
+
+/* Brutalist offset shadow */
+.shadow-brutal {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.shadow-brutal-lg {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.hover\:shadow-brutal:hover {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.hover\:shadow-brutal-lg:hover {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.hover\:shadow-none:hover {
+  box-shadow: none;
+}
+
+/* Graph paper background */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+
+
+/* Fix KaTeX block math overlapping issues */
+.katex-display {
+  margin: 1.5rem 0 !important;
+  padding: 0.5rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Ensure inline math doesn't mess up line heights, but prevent overlaps */
+.katex {
+  line-height: normal;
+}
+
+p:has(.katex) {
+  line-height: 2.2;
+}
+
+div:has(> .katex) {
+  line-height: 2.2;
+}
+
