@@ -20,9 +20,14 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center h-full border-x-2 border-black">
-          <div className="px-6 h-full flex items-center justify-center hover:bg-black hover:text-white cursor-pointer transition-colors">
+          <a 
+            href="https://wa.me/8801609568507" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-6 h-full flex items-center justify-center hover:bg-black hover:text-white cursor-pointer transition-colors"
+          >
             <span className="font-black text-sm uppercase tracking-widest">CONTACT</span>
-          </div>
+          </a>
         </div>
       </nav>
 
