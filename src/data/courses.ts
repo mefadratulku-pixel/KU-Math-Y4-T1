@@ -25,6 +25,7 @@ export interface Course {
   description?: string;
   years: PYQYear[];
 }
+import { hydrodynamicsData } from './hydrodynamics';
 
 // Data for Mathematical Modeling 2017-2018 Special
 export const coursesData: Course[] = [
@@ -14087,4 +14088,5 @@ Let $X = (0, 1)$ ...`,
       },
     ],
   },
+  hydrodynamicsData,
 ];
