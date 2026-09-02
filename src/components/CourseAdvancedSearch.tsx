@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Course } from '@/data/courses';
 import QuestionCard from './QuestionCard';
 
@@ -10,7 +10,19 @@ interface AdvancedSearchProps {
 
 export default function AdvancedSearch({ course }: AdvancedSearchProps) {
   const [searchQuery, setSearchQuery] = useState('');
+  const [debouncedQuery, setDebouncedQuery] = useState('');
   const [selectedSession, setSelectedSession] = useState('ALL');
+  const [isSearching, setIsSearching] = useState(false);
+
+  useEffect(() => {
+    setIsSearching(true);
+    const timer = setTimeout(() => {
+      setDebouncedQuery(searchQuery);
+      setIsSearching(false);
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
 
   // Flatten all questions
   const allQuestions = useMemo(() => {
@@ -40,14 +52,14 @@ export default function AdvancedSearch({ course }: AdvancedSearchProps) {
     return allQuestions.filter(q => {
       const matchSession = selectedSession === 'ALL' || q._meta.session === selectedSession;
       
-      const query = searchQuery.toLowerCase();
+      const query = debouncedQuery.toLowerCase();
       const matchQuery = !query || 
         q.question.toLowerCase().includes(query) || 
         q.solution.toLowerCase().includes(query);
 
       return matchSession && matchQuery;
     });
-  }, [allQuestions, searchQuery, selectedSession]);
+  }, [allQuestions, debouncedQuery, selectedSession]);
 
   return (
     <div>
@@ -90,8 +102,15 @@ export default function AdvancedSearch({ course }: AdvancedSearchProps) {
       </div>
 
       {/* Results Info */}
-      <div className="mb-6 font-bold uppercase tracking-widest text-sm bg-black text-white inline-block px-4 py-2 border-2 border-black shadow-brutal">
-        Found {filteredQuestions.length} Questions
+      <div className="mb-6 flex items-center gap-4">
+        <div className="font-bold uppercase tracking-widest text-sm bg-black text-white inline-block px-4 py-2 border-2 border-black shadow-brutal">
+          Found {filteredQuestions.length} Questions
+        </div>
+        {isSearching && (
+          <div className="font-bold text-sm text-gray-500 animate-pulse">
+            Searching...
+          </div>
+        )}
       </div>
 
       {/* Results List */}
