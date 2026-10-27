@@ -163,7 +163,7 @@ The concentration decays exponentially to a steady state $G/K$.`,
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "A symbiotic linear model can be formulated by the following governing equations: $dx/dt = 2x '+' 4y$, $dy/dt = x '+' 2y$ where $x(0) = 100$ and $y(0) = 300$. Check the nature of stability at (0,0). Determine the populations at all future times t.",
+                  "A symbiotic linear model can be formulated by the following governing equations: $dx/dt = 2x + 4y$, $dy/dt = x + 2y$ where $x(0) = 100$ and $y(0) = 300$. Check the nature of stability at (0,0). Determine the populations at all future times t.",
                 marks: 5,
                 solution: `### Symbiotic Linear Model
 
@@ -267,7 +267,7 @@ So DFE is $E_0 = (\\frac{(1-p)A}{d}, 0)$.
 **Stability at DFE:**
 Assuming $p=0$, $E_0 = (\\frac{A}{d}, 0)$.
 Linearize the $I$ equation around $E_0$:
-$\\frac{dI}{dt} pprox \\frac{\\beta S_0 I}{1+0} - (d+m)I = [\\beta \\frac{A}{d} - (d+m)] I$.
+$\\frac{dI}{dt} \\approx \\frac{\\beta S_0 I}{1+0} - (d+m)I = [\\beta \\frac{A}{d} - (d+m)] I$.
 For stability, the eigenvalue must be negative:
 $\\beta \\frac{A}{d} - (d+m) < 0 \\implies \\frac{\\beta A}{d(d+m)} < 1$.
 The Basic Reproduction Number is $R_0 = \\frac{\\beta A}{d(d+m)}$.
@@ -325,7 +325,7 @@ The corner points are $(0, 5)$, $(4/9, 5/9)$, and $(1, 0)$.
 
 Evaluate cost $Z = x_1 + 1.5x_2$ at the corner points:
 - At $(0, 5)$: $Z = 0 + 1.5(5) = 7.5$.
-- At $(4/9, 5/9)$: $Z = 4/9 + 1.5(5/9) = 4/9 + 7.5/9 = 11.5/9 pprox 1.277$.
+- At $(4/9, 5/9)$: $Z = 4/9 + 1.5(5/9) = 4/9 + 7.5/9 = 11.5/9 \\approx 1.277$.
 - At $(1, 0)$: $Z = 1 + 1.5(0) = 1$.
 
 The minimum cost is $1, which occurs at $(1, 0)$.
@@ -405,7 +405,7 @@ This only happens as $t \\to \\infty$. Theoretically, it takes an infinite amoun
                 id: "2",
                 part: "2.",
                 question:
-                  "State and explain Exponential growth (Malthus model) and Logistic growth (Verhulst Model) model. Solve the logistic differential equation $\frac{dx}{dt} = rx(1 - \frac{x}{K})$ analytically and discuss the stability at equilibrium points.",
+                  "State and explain Exponential growth (Malthus model) and Logistic growth (Verhulst Model) model. Solve the logistic differential equation $\\frac{dx}{dt} = rx(1 - \\frac{x}{K})$ analytically and discuss the stability at equilibrium points.",
                 marks: 10,
                 solution: `### Exponential and Logistic Models
 
@@ -494,7 +494,7 @@ This shows that over time during dialysis, the concentration exponentially decay
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "A two species competition model with linear autonomous systems can be formulated as $dx/dt = 3x - y$, $dy/dt = -2x '+' 2y$ where $x(0) = 90$ and $y(0) = 150$ and t is measured in years. (i) Determine the populations (x(t), y(t)) at all future times t. (ii) What will be the populations after six months? (iii) When will the species y be eliminated?",
+                  "A two species competition model with linear autonomous systems can be formulated as $dx/dt = 3x - y$, $dy/dt = -2x + 2y$ where $x(0) = 90$ and $y(0) = 150$ and t is measured in years. (i) Determine the populations (x(t), y(t)) at all future times t. (ii) What will be the populations after six months? (iii) When will the species y be eliminated?",
                 marks: 6,
                 solution: `### Two Species Linear Model
 
@@ -526,8 +526,8 @@ $x(t) = 80 e^t + 10 e^{4t}$
 $y(t) = 160 e^t - 10 e^{4t}$.
 
 **(ii) Populations after six months ($t = 0.5$ years):**
-$x(0.5) = 80 e^{0.5} + 10 e^2 pprox 80(1.6487) + 10(7.389) = 131.9 + 73.89 pprox 205.79$.
-$y(0.5) = 160 e^{0.5} - 10 e^2 pprox 160(1.6487) - 10(7.389) = 263.79 - 73.89 pprox 189.9$.
+$x(0.5) = 80 e^{0.5} + 10 e^2 \\approx 80(1.6487) + 10(7.389) = 131.9 + 73.89 \\approx 205.79$.
+$y(0.5) = 160 e^{0.5} - 10 e^2 \\approx 160(1.6487) - 10(7.389) = 263.79 - 73.89 \\approx 189.9$.
 
 **(iii) When will species y be eliminated?**
 Elimination means $y(t) = 0$.
@@ -605,24 +605,24 @@ Non-negativity: $x \\ge 0, y \\ge 0$.
 
 **Graphical Solution:**
 1. $50x + 24y = 2400 \\implies$ intercepts $(48, 0)$ and $(0, 100)$.
-2. $30x + 33y = 2100 \\implies$ intercepts $(70, 0)$ and $(0, 2100/33 pprox 63.63)$.
+2. $30x + 33y = 2100 \\implies$ intercepts $(70, 0)$ and $(0, 2100/33 \\approx 63.63)$.
 
 Find the intersection point of the two constraint lines:
 Multiply equation (2) by $5/3$: $50x + 55y = 3500$.
 Subtract equation (1):
 $(50x + 55y) - (50x + 24y) = 3500 - 2400$
-$31y = 1100 \\implies y = 1100 / 31 pprox 35.48$.
+$31y = 1100 \\implies y = 1100 / 31 \\approx 35.48$.
 Substitute $y$ back:
 $50x + 24(1100/31) = 2400$
-$50x + 26400/31 = 74400/31 \\implies 50x = 48000/31 \\implies x = 960/31 pprox 30.97$.
+$50x + 26400/31 = 74400/31 \\implies 50x = 48000/31 \\implies x = 960/31 \\approx 30.97$.
 Since we must produce integer units, we need to check integer points near $(30.97, 35.48)$ that satisfy the constraints, or use the Simplex method for continuous variables. Assuming continuous for the general formulation:
 Corner points of feasible region:
 - $(0, 0) \\implies Z = 0$
 - $(48, 0) \\implies Z = 25(48) = 1200$
-- $(0, 1100/31) pprox (0, 35.48)$... wait, $(0, 63.63)$ is the intercept for B, but the feasible region is bounded by the tighter constraint. At $x=0$, $y = 2400/24 = 100$ (from A), and $y = 2100/33 = 63.63$ (from B). So the corner point is $(0, 63.63)$.
-$Z = 30(2100/33) pprox 30 	imes 63.63 pprox 1909$.
-- Intersection point $(960/31, 1100/31) pprox (30.97, 35.48)$:
-$Z = 25(960/31) + 30(1100/31) = \\frac{24000 + 33000}{31} = \\frac{57000}{31} pprox 1838.71$.
+- $(0, 1100/31) \\approx (0, 35.48)$... wait, $(0, 63.63)$ is the intercept for B, but the feasible region is bounded by the tighter constraint. At $x=0$, $y = 2400/24 = 100$ (from A), and $y = 2100/33 = 63.63$ (from B). So the corner point is $(0, 63.63)$.
+$Z = 30(2100/33) \\approx 30 	imes 63.63 \\approx 1909$.
+- Intersection point $(960/31, 1100/31) \\approx (30.97, 35.48)$:
+$Z = 25(960/31) + 30(1100/31) = \\frac{24000 + 33000}{31} = \\frac{57000}{31} \\approx 1838.71$.
 
 Wait! Let me recheck the corner points!
 Intercepts for Machine A: $(48, 0)$ and $(0, 100)$.
@@ -631,7 +631,7 @@ Feasible region vertices:
 - $(0,0)$
 - $(48, 0)$ (because $48 < 70$)
 - $(0, 63.63)$ (because $63.63 < 100$)
-- Intersection: $x pprox 30.97, y pprox 35.48$.
+- Intersection: $x \\approx 30.97, y \\approx 35.48$.
 
 Evaluate Z:
 At $(48, 0)$: $Z = 25(48) = 1200$.
@@ -803,7 +803,7 @@ $2P_0 = P_0 e^{6k} \\implies e^{6k} = 2 \\implies 6k = \\ln 2 \\implies k = \\fr
 We need to find $t$ when $P(t) = 3P_0$.
 $3P_0 = P_0 e^{kt} \\implies e^{kt} = 3 \\implies kt = \\ln 3$.
 $t = \\frac{\\ln 3}{k} = \\frac{\\ln 3}{\\frac{\\ln 2}{6}} = 6 \\frac{\\ln 3}{\\ln 2} = 6 \\log_2 3$.
-$t pprox 6 \\times 1.58496 pprox 9.51$ years.`,
+$t \\approx 6 \\times 1.58496 \\approx 9.51$ years.`,
               },
               {
                 id: "4b",
@@ -883,18 +883,18 @@ General solution: $B_n = C (0.91)^n + 0.5 A_0 (0.97)^n$.
 At $n=0$: $B_0 = C + 0.5 A_0 \\implies C = B_0 - 0.5 A_0 = 7 - 25 = -18$.
 So, $B_n = -18 (0.91)^n + 25 (0.97)^n$.
 After 5 days ($n=5$):
-$A_5 = 50 (0.97)^5 pprox 50 (0.8587) pprox 42.94$ grams.
-$B_5 = -18 (0.91)^5 + 25 (0.97)^5 pprox -18 (0.624) + 25 (0.8587) pprox -11.232 + 21.468 pprox 10.24$ grams.
+$A_5 = 50 (0.97)^5 \\approx 50 (0.8587) \\approx 42.94$ grams.
+$B_5 = -18 (0.91)^5 + 25 (0.97)^5 \\approx -18 (0.624) + 25 (0.8587) \\approx -11.232 + 21.468 \\approx 10.24$ grams.
 
 **(iii) Finding initial A:**
 Given: At $n=30$, $B_{30} = 20$ grams. $B_0 = 10$ grams. Find $A_0$.
 From general solution: $B_n = (B_0 - 0.5 A_0)(0.91)^n + 0.5 A_0 (0.97)^n$.
 $B_{30} = (10 - 0.5 A_0)(0.91)^{30} + 0.5 A_0 (0.97)^{30} = 20$.
-$(0.91)^{30} pprox 0.059$
-$(0.97)^{30} pprox 0.401$
+$(0.91)^{30} \\approx 0.059$
+$(0.97)^{30} \\approx 0.401$
 $(10 - 0.5 A_0)(0.059) + 0.5 A_0 (0.401) = 20$
 $0.59 - 0.0295 A_0 + 0.2005 A_0 = 20$
-$0.171 A_0 = 19.41 \\implies A_0 pprox 113.5$.
+$0.171 A_0 = 19.41 \\implies A_0 \\approx 113.5$.
 To the nearest gram, $A_0 = 114$ grams.`,
               },
               {
@@ -920,7 +920,7 @@ An equilibrium point (or critical point) is a state $\\mathbf{x}^*$ of an autono
                 id: "6b",
                 part: "6. (b)",
                 question:
-                  "Find the equilibrium point and nature of the critical point, also determine the stability of the point and sketch the trajectory near the equation of the system: $dx/dt = 2x'+'7y$, $dy/dt = 3x-8y$.",
+                  "Find the equilibrium point and nature of the critical point, also determine the stability of the point and sketch the trajectory near the equation of the system: $dx/dt = 2x+7y$, $dy/dt = 3x-8y$.",
                 marks: 6,
                 solution: `### Equilibrium and Stability
 
@@ -1118,7 +1118,7 @@ Estimated dead time is 2:16 AM.`,
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Define Allee effect and crowding effect of a biological model. Solve the model $\frac{dx}{dt} = rx(1 - \frac{x}{K}) - \frac{cx}{a'+'x}$ analytically ...",
+                  "Define Allee effect and crowding effect of a biological model. Solve the model $\\frac{dx}{dt} = rx(1 - \\frac{x}{K}) - \\frac{cx}{a+x}$ analytically ...",
                 marks: 5,
                 solution: `### Allee Effect and Crowding Effect
 
@@ -1132,7 +1132,7 @@ Also known as intra-specific competition or density dependence. It refers to the
                 id: "4a",
                 part: "4. (a)",
                 question:
-                  "A model for species cooperation is given by $x' = -2x '+' 4y$, $y' = x - 2y$. Discuss the nature of cooperation and determine the predicted future population. What happens as $t \to \infty$?",
+                  "A model for species cooperation is given by $x' = -2x + 4y$, $y' = x - 2y$. Discuss the nature of cooperation and determine the predicted future population. What happens as $t \\to \\infty$?",
                 marks: 5,
                 solution: `### Species Cooperation Model
 
@@ -1515,8 +1515,8 @@ Let $y(t)$ be the armament level of Nation Y at time $t$.
 The model is described by a system of two coupled linear ordinary differential equations:
 $$
 \\begin{aligned}
-\\frac{dx}{dt} &= ky - \\alpha x + g \\quad \\dots \\tag{1} \\\\
-\\frac{dy}{dt} &= lx - \\beta y + h \\quad \\dots \\tag{2}
+\\frac{dx}{dt} &= ky - \\alpha x + g \\quad \\dots \\\\
+\\frac{dy}{dt} &= lx - \\beta y + h \\quad \\dots
 \\end{aligned}
 $$
 
@@ -1722,7 +1722,7 @@ This contradicts the assumption that there are two distinct solutions. Hence, th
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "Discuss the method of successive approximation. Apply this method to solve the initial value problem $\\frac{dy}{dx} = e^x '+' y^2$, $y(0) = 0$.",
+                  "Discuss the method of successive approximation. Apply this method to solve the initial value problem $\\frac{dy}{dx} = e^x + y^2$, $y(0) = 0$.",
                 marks: 5,
                 solution: `### 1. Method of Successive Approximation (Picard's Iteration)
 
@@ -2008,7 +2008,7 @@ These two cases provide the complete analytical solution to the PDE.`,
                 id: "8b",
                 part: "8. (b)",
                 question:
-                  "Find $u_n$ if $u_0=0, u_1=1$ and $u_{n'+'2} '+' 16u_n = 0$.",
+                  "Find $u_n$ if $u_0=0, u_1=1$ and $u_{n+2} + 16u_n = 0$.",
                 marks: 4,
                 solution: `### 1. The Difference Equation
 
@@ -2240,8 +2240,8 @@ Let $y(t)$ be the predator population density.
 The Lotka-Volterra model is given by the system of non-linear ODEs:
 $$
 \\begin{aligned}
-\\frac{dx}{dt} &= \\alpha x - \\beta xy \\quad \\dots \\tag{1} \\\\
-\\frac{dy}{dt} &= \\delta xy - \\gamma y \\quad \\dots \\tag{2}
+\\frac{dx}{dt} &= \\alpha x - \\beta xy \\quad \\dots \\\\
+\\frac{dy}{dt} &= \\delta xy - \\gamma y \\quad \\dots
 \\end{aligned}
 $$
 Where:
@@ -2337,6 +2337,7 @@ This equation represents closed curves (ellipses near the center) in the $xy$-ph
       },
       {
         year: "2018-2019",
+        session: "2018-2019",
         sections: [
           {
             title: "Section-A",
@@ -2675,20 +2676,7 @@ At the critical parameter value $\\mu_c = 0$, the system undergoes a **Supercrit
 *   **Solid lines (-):** Represent Stable equilibria.
 *   **Dashed lines (--):** Represent Unstable equilibria.
 
-\`\`\`text
-         x*
-          |       / (Stable branch: x* = +sqrt(μ))
-          |      / 
-          |     /  
-          |    /   
---------------------------------- μ
- (Stable) |  /---- (Unstable branch: x* = 0)
-          |  \\\\     
-          |   \\\\    
-          |    \\\\   
-          |     \\\\  (Stable branch: x* = -sqrt(μ))
-          |      \\\\ 
-\`\`\`
+In words, the diagram is the pitchfork described below: one branch before μ = 0, three after.
 *   For $\\mu < 0$, a single solid line runs along the $\\mu$-axis ($x^*=0$).
 *   At $\\mu = 0$, it splits into three branches: two solid outer branches curves like parabolas ($x^* = \\pm\\sqrt{\\mu}$), and a central dashed line continuing along the $\\mu$-axis ($x^*=0$).`,
               },
@@ -3031,7 +3019,7 @@ This mathematically proves the physical intuition: **over a long time, the tempe
                 id: "5b",
                 part: "5. (b)",
                 question:
-                  "Consider the price model $p_{n'+'1} = \\frac{1}{p_n} '+' \\frac{p_n}{2} - 1$. Find the two equilibrium points and determine their stability.",
+                  "Consider the price model $p_{n+1} = \\frac{1}{p_n} + \\frac{p_n}{2} - 1$. Find the two equilibrium points and determine their stability.",
                 marks: 4,
                 solution: `### 1. Finding the Equilibrium Points
 
@@ -3370,26 +3358,13 @@ $$
     *   Since $\\lambda_2 = -2$ is more negative than $\\lambda_1 = -1$, the $y$-component decays faster than the $x$-component.
     *   Therefore, all trajectories initially curve rapidly towards the x-axis (the "slow" eigendirection) and then approach the origin tangentially along the x-axis.
 
-\`\`\`text
-          y
-          |
-   \\\\      |      /
-    \\\\     |     /    (Trajectories are parabolas y = Kx^2)
-     \\\\    |    /     (Arrow heads point towards the origin)
-      \\\\   |   /      (Curve becomes tangent to the x-axis near origin)
-------->--+--<--------- x
-      /   |   \\\\
-     /    |    \\\\
-    /     |     \\\\
-   /      |      \\\\
-          |
-\`\`\`
+In words: parabolas y = Kx², curving toward the x-axis and entering the origin tangentially along it.
 *All arrows point inward towards the stable node at $(0,0)$.*`,
               },
               {
                 id: "8a",
                 part: "8. (a)",
-                question: "Solve $U_n = K '+' U_{n-1}$ where $K$ is constant.",
+                question: "Solve $U_n = K + U_{n-1}$ where $K$ is constant.",
                 marks: 4,
                 solution: `### Solution of the Difference Equation
 
@@ -3486,6 +3461,7 @@ The specific value of $\\lambda = f'(x^*)$ determines not only if the point is s
       },
       {
         year: "2022-2023",
+        session: "2022-2023",
         sections: [
           {
             title: "Section-A",
@@ -3514,14 +3490,7 @@ The process of mathematical modeling is iterative and involves several distinct 
 5.  **Validation:** Compare the predicted results with real-world data or observations. If the model is inaccurate, refine the assumptions and repeat the process.
 
 **Block Diagram Representation:**
-\`\`\`mermaid
-graph TD
-    A[Real-World Problem] -->|Abstraction & Assumptions| B[Mathematical Model]
-    B -->|Mathematical Analysis/Solving| C[Mathematical Conclusions]
-    C -->|Interpretation| D[Real-World Predictions]
-    D -->|Compare with Data| A
-    D -.->|If invalid, refine model| B
-\`\`\` `,
+Flow: Real-World Problem → Mathematical Model → Mathematical Conclusions → Real-World Predictions → back to the Real-World Problem for validation (and back to the model if invalid). `,
               },
               {
                 id: "1b",
@@ -3919,7 +3888,7 @@ The stability criteria are:
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "A two species model with linear autonomous systems can be formulated as $\\frac{dx}{dt} = ax '+' by$ and $\\frac{dy}{dt} = cx '+' dy$. Determine the stability of the system at all times.",
+                  "A two species model with linear autonomous systems can be formulated as $\\frac{dx}{dt} = ax + by$ and $\\frac{dy}{dt} = cx + dy$. Determine the stability of the system at all times.",
                 marks: 6,
                 solution: `### 1. The Two-Species Linear Autonomous System
 
@@ -4427,7 +4396,7 @@ $$
     years: [
       {
         year: "2024-2025",
-        session: "2024-2025 (Term I) - Math-4105",
+        session: "2024-2025 (Term I)",
         sections: [
           {
             title: "Section-A",
@@ -4497,7 +4466,7 @@ $\\nabla \\cdot \\mathbf{q} = 0$`,
                 id: "3a",
                 part: "3. (a)",
                 question:
-                  "Show that the velocity potential $\phi = -a(x^2 '+' y^2 - 2z^2)$ satisfies Laplace's equation. Also determine the streamlines.",
+                  "Show that the velocity potential $\\phi = -a(x^2 + y^2 - 2z^2)$ satisfies Laplace's equation. Also determine the streamlines.",
                 marks: 5,
                 solution: `### Laplace's Equation and Streamlines
 
@@ -4524,7 +4493,7 @@ The streamlines are the curves of intersection of the planes $x = C_1 y$ and the
                 id: "4a",
                 part: "4. (a)",
                 question:
-                  "Show that $u = \frac{-2xyz}{(x^2'+'y^2)^2}, v = \frac{(x^2-y^2)z}{(x^2'+'y^2)^2}, w = \frac{y}{x^2'+'y^2}$ are the velocity components of the possible fluid motion. Is this motion irrotational?",
+                  "Show that $u = \\frac{-2xyz}{(x^2+y^2)^2}, v = \\frac{(x^2-y^2)z}{(x^2+y^2)^2}, w = \\frac{y}{x^2+y^2}$ are the velocity components of the possible fluid motion. Is this motion irrotational?",
                 marks: 5,
                 solution: `### Possible Motion and Irrotationality
 
@@ -4605,7 +4574,7 @@ $u (\\frac{\\partial w}{\\partial y} - \\frac{\\partial v}{\\partial z}) + v (\\
                 id: "7b",
                 part: "7. (b)",
                 question:
-                  "Find the center of pressure of a triangular area, the depth of whose vertices are $\alpha, \beta, \gamma$ from the free surface.",
+                  "Find the center of pressure of a triangular area, the depth of whose vertices are $\\alpha, \\beta, \\gamma$ from the free surface.",
                 marks: 5,
                 solution: `### Center of Pressure of a General Triangle
 
@@ -4808,7 +4777,7 @@ This streamline connects the sources to the sinks.`,
                 id: "6b",
                 part: "6. (b)",
                 question:
-                  "Find the $\phi$ and $\psi$ from $w = Az^n$. Also discuss the cases i) $n>1$, ii) $1/2 < n < 1$ and (iii) $n=1/2$.",
+                  "Find the $\\phi$ and $\\psi$ from $w = Az^n$. Also discuss the cases i) $n>1$, ii) $1/2 < n < 1$ and (iii) $n=1/2$.",
                 marks: 5,
                 solution: `### Flow in a Sector (Corner Flow)
 
@@ -4831,7 +4800,7 @@ The fluid speed is $q = |dw/dz| = |n A z^{n-1}| = n A r^{n-1}$.
                 id: "7b",
                 part: "7. (b)",
                 question:
-                  "Calculate the circulation round (i) a square with corners $(1,0), (2,0), (2,1)$ and $(1,1)$ (ii) a unit circle with center at the origin. Prove that a flow is irrotational for the given velocity $\mathbf{q} = \frac{-y\mathbf{i} '+' x\mathbf{j}}{x^2'+'y^2}$.",
+                  "Calculate the circulation round (i) a square with corners $(1,0), (2,0), (2,1)$ and $(1,1)$ (ii) a unit circle with center at the origin. Prove that a flow is irrotational for the given velocity $\\mathbf{q} = \\frac{-y\\mathbf{i} + x\\mathbf{j}}{x^2+y^2}$.",
                 marks: 5,
                 solution: `### Circulation and Irrotationality
 
@@ -4947,7 +4916,7 @@ These are the streamlines. They represent fluid leaving the sources at $\\pm a$ 
                 id: "1b",
                 part: "1. (b)",
                 question:
-                  "Show that $u = \frac{3x^2 - r^2}{r^5}$, $v = \frac{3xy}{r^5}$, $w = \frac{3xz}{r^5}$ are velocity components of possible incompressible fluid flow. Also find the stream line of the flow.",
+                  "Show that $u = \\frac{3x^2 - r^2}{r^5}$, $v = \\frac{3xy}{r^5}$, $w = \\frac{3xz}{r^5}$ are velocity components of possible incompressible fluid flow. Also find the stream line of the flow.",
                 marks: 5,
                 solution: `### Fluid Flow Velocity
 
@@ -4975,7 +4944,7 @@ So the streamlines are given by the intersection of the surfaces $y = C_1 z$ and
                 id: "2a",
                 part: "2. (a)",
                 question:
-                  "Find the velocity potential($\phi$) and stream function($\psi$) from the complex potential function $w = az^n$ and show them graphically. Also find the fluid velocity.",
+                  "Find the velocity potential($\\phi$) and stream function($\\psi$) from the complex potential function $w = az^n$ and show them graphically. Also find the fluid velocity.",
                 marks: 5,
                 solution: `### Flow in a Sector
 
@@ -5003,7 +4972,7 @@ Tangential velocity $v_\\theta = -\\frac{1}{r}\\frac{\\partial \\phi}{\\partial 
                 id: "3a",
                 part: "3. (a)",
                 question:
-                  "State Bernoulli's equation. Find the adiabatic expansion for the Bernoulli's equation. Hence show that $\dots$",
+                  "State Bernoulli's equation. Find the adiabatic expansion for the Bernoulli's equation. Hence show that $\\dots$",
                 marks: 5,
                 solution: `### Bernoulli's Equation for Adiabatic Gas
 
@@ -5024,7 +4993,7 @@ $\\frac{\\gamma}{\\gamma - 1} \\frac{p}{\\rho} + \\frac{1}{2}q^2 + \\Omega = \\t
                 id: "4a",
                 part: "4. (a)",
                 question:
-                  "Derive the momentum equation for incompressible fluid flow of the form $\frac{\partial \mathbf{q}}{\partial t} '+' \frac{1}{2}\nabla q^2 - \mathbf{q} \times \text{curl} \mathbf{q} = \mathbf{F} - \frac{1}{\rho}\nabla p$.",
+                  "Derive the momentum equation for incompressible fluid flow of the form $\\frac{\\partial \\mathbf{q}}{\\partial t} + \\frac{1}{2}\\nabla q^2 - \\mathbf{q} \\times \\text{curl} \\mathbf{q} = \\mathbf{F} - \\frac{1}{\\rho}\\nabla p$.",
                 marks: 5,
                 solution: `### Vector Momentum Equation
 
@@ -5049,7 +5018,7 @@ This is the required momentum equation in vector form.`,
                 id: "5b",
                 part: "5. (b)",
                 question:
-                  "A source and a sink of equal strength are placed at the points $(a, 0)$ and $(-a, 0)$ respectively, within a fixed circular boundary $|z|=2a$, show that the streamlines are given by curves $16a^2y^2 '+' \lambda y(r^2 - 4a^2) = (r^2 - a^2)$, where $\lambda$ is a constant.",
+                  "A source and a sink of equal strength are placed at the points $(a, 0)$ and $(-a, 0)$ respectively, within a fixed circular boundary $|z|=2a$, show that the streamlines are given by curves $16a^2y^2 + \\lambda y(r^2 - 4a^2) = (r^2 - a^2)$, where $\\lambda$ is a constant.",
                 marks: 5,
                 solution: `### Image of Source-Sink Pair in a Circle
 
@@ -5115,7 +5084,7 @@ Ignoring the constant $-m\\ln(-f)$, the potential consists of:
                 id: "7a",
                 part: "7. (a)",
                 question:
-                  "Describe the stagnation point. If $w = 2z '+' 3iz^2$, find the velocity $q$ and stagnation point.",
+                  "Describe the stagnation point. If $w = 2z + 3iz^2$, find the velocity $q$ and stagnation point.",
                 marks: 5,
                 solution: `### Stagnation Point
 
@@ -5275,7 +5244,7 @@ This is the general vector form of Euler's dynamical equation of motion for an i
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Derive the energy equation of a fluid motion under conservative forces in the form $\frac{d}{dt}(T '+' V '+' J) = \int p q_n dS$. (Assume standard form).",
+                  "Derive the energy equation of a fluid motion under conservative forces in the form $\\frac{d}{dt}(T + V + J) = \\int p q_n dS$. (Assume standard form).",
                 marks: 5,
                 solution: `### Energy Equation
 
@@ -5405,8 +5374,8 @@ So $q^2 d\\bar{z} = q^2 (dz / e^{2i\\theta}) = (q e^{-i\\theta})^2 dz = (dw/dz)^
 Substituting this into the force equation:
 $X - iY = -\\frac{1}{2}i\\rho \\oint (dw/dz)^2 dz$ (Wait, the sign in standard Blasius is $\\frac{1}{2}i\\rho$. Let's re-check: $p$ is inward, so force is $-p \\mathbf{n}$. Yes, $X - iY = -\\frac{1}{2}i\\rho \\oint q^2 d\\bar{z}$. Since $d\\bar{z} = dz e^{-2i\\theta}$ and $q e^{-i\\theta} = dw/dz$, we have $q^2 d\\bar{z} = (q e^{-i\\theta})^2 dz = (dw/dz)^2 dz$. So $X - iY = -\\frac{1}{2}i\\rho \\dots$ Actually, if we use $p = -1/2 
 ho q^2$, $X - iY = i \\oint (-1/2 
-ho q^2) dar{z} = -1/2 i 
-ho \\oint q^2 dar{z}$. The standard result is $X - iY = \\frac{1}{2} i \\rho \\oint (dw/dz)^2 dz$. The negative sign depends on convention, often $w = \\phi + i\\psi$ vs $w = -\\phi - i\\psi$. Both lead to the same integral magnitude). Let's use the positive sign as stated.`,
+ho q^2) d\\bar{z} = -1/2 i 
+ho \\oint q^2 d\\bar{z}$. The standard result is $X - iY = \\frac{1}{2} i \\rho \\oint (dw/dz)^2 dz$. The negative sign depends on convention, often $w = \\phi + i\\psi$ vs $w = -\\phi - i\\psi$. Both lead to the same integral magnitude). Let's use the positive sign as stated.`,
               },
             ],
           },
@@ -5434,7 +5403,7 @@ ho \\oint q^2 dar{z}$. The standard result is $X - iY = \\frac{1}{2} i \\rho \\
                 id: "1b",
                 part: "1. (b)",
                 question:
-                  "Show that $u = \frac{x^2 - y^2}{(x^2 '+' y^2)^2}$, $v = \frac{2xy}{(x^2 '+' y^2)^2}$, $w = 0$ are the velocity components of the possible fluid motion. Is this motion irrotational?",
+                  "Show that $u = \\frac{x^2 - y^2}{(x^2 + y^2)^2}$, $v = \\frac{2xy}{(x^2 + y^2)^2}$, $w = 0$ are the velocity components of the possible fluid motion. Is this motion irrotational?",
                 marks: 5,
                 solution: `### Fluid Motion and Irrotationality
 
@@ -5458,7 +5427,7 @@ Thus, the motion is irrotational.`,
                 id: "2a",
                 part: "2. (a)",
                 question:
-                  "Derive equation of Euler motion $\frac{\partial \mathbf{q}}{\partial t} '+' \nabla \left(\frac{1}{2}q^2\right) '+' \mathbf{\Omega} \times \mathbf{q} = \mathbf{F} - \frac{1}{\rho}\nabla p$ where $\mathbf{\Omega} = \text{curl } \mathbf{q}$. Hence deduce $\dots$ (Boundary surface condition)",
+                  "Derive equation of Euler motion $\\frac{\\partial \\mathbf{q}}{\\partial t} + \\nabla \\left(\\frac{1}{2}q^2\\right) + \\mathbf{\\Omega} \\times \\mathbf{q} = \\mathbf{F} - \\frac{1}{\\rho}\\nabla p$ where $\\mathbf{\\Omega} = \\text{curl } \\mathbf{q}$. Hence deduce $\\dots$ (Boundary surface condition)",
                 marks: 5,
                 solution: `### Euler's Equation of Motion
 
@@ -5484,7 +5453,7 @@ This is the condition that $F(x,y,z,t)=0$ may be a boundary surface.`,
                 id: "2b",
                 part: "2. (b)",
                 question:
-                  "Determine whether the motion specified by $\mathbf{q} = \frac{Ax\mathbf{j} - Ay\mathbf{i}}{x^2'+'y^2}$ ($A=\text{constant}$) is a possible motion for an incompressible fluid. If so, determine the equation of stream lines. Also show that the motion is of potential kind.",
+                  "Determine whether the motion specified by $\\mathbf{q} = \\frac{Ax\\mathbf{j} - Ay\\mathbf{i}}{x^2+y^2}$ ($A=\\text{constant}$) is a possible motion for an incompressible fluid. If so, determine the equation of stream lines. Also show that the motion is of potential kind.",
                 marks: 5,
                 solution: `### Fluid Motion Analysis
 
@@ -5538,7 +5507,7 @@ $\\int \\frac{dp}{\\rho} + \\frac{1}{2}v^2 + \\Omega = \\text{constant}$.`,
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "A stream in a horizontal pipe, after passing a contraction in the pipe at which its sectional area is $A$, is delivered at atmospheric pressure at a place where the sectional area is $B$. Show that if a side tube connected with the pipe at the former place, water will be sucked up through it into the pipe from a reservoir a depth $h = \frac{s^2}{2g}(\frac{1}{A^2} - \frac{1}{B^2})$ below the pipe; where $s$ is the delivery per second.",
+                  "A stream in a horizontal pipe, after passing a contraction in the pipe at which its sectional area is $A$, is delivered at atmospheric pressure at a place where the sectional area is $B$. Show that if a side tube connected with the pipe at the former place, water will be sucked up through it into the pipe from a reservoir a depth $h = \\frac{s^2}{2g}(\\frac{1}{A^2} - \\frac{1}{B^2})$ below the pipe; where $s$ is the delivery per second.",
                 marks: 5,
                 solution: `### Venturi Effect and Suction
 
@@ -5564,7 +5533,7 @@ This is the depth from which water will be sucked up.`,
                 id: "4a",
                 part: "4. (a)",
                 question:
-                  "Derive continuity equation for compressible fluid with geometrical interpretation. Define stagnation points. Show that the velocity potential $\phi = \frac{1}{2} \log(x^2'+'y^2)$ gives a possible motion and determine the form of the streamlines.",
+                  "Derive continuity equation for compressible fluid with geometrical interpretation. Define stagnation points. Show that the velocity potential $\\phi = \\frac{1}{2} \\log(x^2+y^2)$ gives a possible motion and determine the form of the streamlines.",
                 marks: 5,
                 solution: `### Continuity and Stagnation Points
 
@@ -5592,7 +5561,7 @@ The streamlines are straight lines passing through the origin (radial flow).`,
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "In a two-dimensional motion show that a streamline cuts itself at a point of zero velocity and that the two branches are at right angles when the motion irrotational. Sketch the streamline which passes through the stagnation point of the motion given by $V = y - a \tan^{-1}(y/x)$.",
+                  "In a two-dimensional motion show that a streamline cuts itself at a point of zero velocity and that the two branches are at right angles when the motion irrotational. Sketch the streamline which passes through the stagnation point of the motion given by $V = y - a \\tan^{-1}(y/x)$.",
                 marks: 5,
                 solution: `### Streamlines at Stagnation Points
 
@@ -5634,7 +5603,7 @@ Therefore, the two branches of the streamline intersecting at the stagnation poi
                 id: "5b",
                 part: "5. (b)",
                 question:
-                  "Two sources of strength $m$ (each) are placed at the points $(a,0)$ and $(-a,0)$ and a sink of strength $2m$ is placed at the origin. Show that the streamlines are curves $(x^2 '+' y^2)^2 = a^2(x^2 - y^2 '+' \lambda xy)$, where $\lambda$ is the variable parameter. Show also that the fluid speed at any point is $\frac{2ma^2}{r_1 r_2 r_3}$, where $r_1, r_2, r_3$ are respectively the distances of the fluid points from the sources and sink.",
+                  "Two sources of strength $m$ (each) are placed at the points $(a,0)$ and $(-a,0)$ and a sink of strength $2m$ is placed at the origin. Show that the streamlines are curves $(x^2 + y^2)^2 = a^2(x^2 - y^2 + \\lambda xy)$, where $\\lambda$ is the variable parameter. Show also that the fluid speed at any point is $\\frac{2ma^2}{r_1 r_2 r_3}$, where $r_1, r_2, r_3$ are respectively the distances of the fluid points from the sources and sink.",
                 marks: 10,
                 solution: `### Flow from Sources and Sink
 
@@ -5678,7 +5647,7 @@ Thus, $q = \\frac{2ma^2}{r_1 r_2 r_3}$.`,
                 id: "6a",
                 part: "6. (a)",
                 question:
-                  "Define stagnation point. In two-dimensional flow of a liquid, the complex potential is $W = a^2/z '+' i k \log z$ where $a, k$ are real and positive. Show that (i) the circle $|z| = a$ is a stream line. (ii) there are in general two stagnation points (iii) the circulation about the circle $|z| = a$ is $2\pi k$.",
+                  "Define stagnation point. In two-dimensional flow of a liquid, the complex potential is $W = a^2/z + i k \\log z$ where $a, k$ are real and positive. Show that (i) the circle $|z| = a$ is a stream line. (ii) there are in general two stagnation points (iii) the circulation about the circle $|z| = a$ is $2\\pi k$.",
                 marks: 5,
                 solution: `### Flow around a Cylinder with Circulation
 
@@ -5718,7 +5687,7 @@ Wait, the convention is $W = - \\dots$ or circulation is defined differently. Us
                 id: "7b",
                 part: "7. (b)",
                 question:
-                  "A triangle, of base $a$ and altitude $h$, is placed in water with its plane vertical and the side $a$ horizontal and at a depth $k$ below the surface of the water; show that the depth of its center of pressure is $\frac{6k^2 '+' 4kh '+' h^2}{2(3k '+' h)}$. (Corrected formula based on standard hydrostatics).",
+                  "A triangle, of base $a$ and altitude $h$, is placed in water with its plane vertical and the side $a$ horizontal and at a depth $k$ below the surface of the water; show that the depth of its center of pressure is $\\frac{6k^2 + 4kh + h^2}{2(3k + h)}$. (Corrected formula based on standard hydrostatics).",
                 marks: 5,
                 solution: `### Center of Pressure of a Triangle
 
@@ -5755,6 +5724,7 @@ $\\bar{Y} = \\frac{N}{D} = \\frac{ \\frac{h^2}{12}(6k^2 + 4kh + h^2) }{ \\frac{h
 
       {
         year: "2017-2018 (Special)",
+        session: "2017-2018 (Special)",
         sections: [
           {
             title: "Section-A",
@@ -5983,7 +5953,7 @@ This is **Euler's equation of motion** in vector form. It is the fundamental mom
                 id: "4a",
                 part: "4. (a)",
                 question:
-                  "Show that $u = \\frac{x^2 - y^2}{(x^2 '+' y^2)^2}$ and $v = \\frac{2xy}{(x^2 '+' y^2)^2}$ are the velocity components of a possible fluid motion. Is this motion irrotational?",
+                  "Show that $u = \\frac{x^2 - y^2}{(x^2 + y^2)^2}$ and $v = \\frac{2xy}{(x^2 + y^2)^2}$ are the velocity components of a possible fluid motion. Is this motion irrotational?",
                 marks: 5,
                 solution: `### Analysis of Fluid Motion
 
@@ -6122,7 +6092,7 @@ $$ \\boxed{w = -m \\ln z} $$
                 id: "5b",
                 part: "5. (b)",
                 question:
-                  "Two sources of equal strength are situated respectively at the points $(\\pm a, 0)$ in an unbounded fluid. Show that at any point on the circle $x^2 '+' y^2 = a^2$, the fluid velocity is parallel to the y-axis.",
+                  "Two sources of equal strength are situated respectively at the points $(\\pm a, 0)$ in an unbounded fluid. Show that at any point on the circle $x^2 + y^2 = a^2$, the fluid velocity is parallel to the y-axis.",
                 marks: 5,
                 solution: `### Velocity Field of Two Sources
 
@@ -6307,7 +6277,7 @@ Therefore, a uniform flow past a cylinder is mathematically equivalent to the su
                 id: "8a",
                 part: "8. (a)",
                 question:
-                  "Show that the vorticity vector of an incompressible fluid moving under no external forces satisfies the differential equation $\\frac{d\\mathbf{\\Omega}}{dt} = (\\mathbf{\\Omega} \\cdot \\nabla)\\mathbf{q} '+' \\nu \\nabla^2 \\mathbf{\\Omega}$.",
+                  "Show that the vorticity vector of an incompressible fluid moving under no external forces satisfies the differential equation $\\frac{d\\mathbf{\\Omega}}{dt} = (\\mathbf{\\Omega} \\cdot \\nabla)\\mathbf{q} + \\nu \\nabla^2 \\mathbf{\\Omega}$.",
                 marks: 5,
                 solution: `### Vorticity Transport Equation
 
@@ -6362,7 +6332,7 @@ This is the required vorticity transport equation.`,
                 id: "8b",
                 part: "8. (b)",
                 question:
-                  "If E is the internal energy of a gas, S is the entropy, Show that $T dS = dE '+' P dV$ where all symbols have their usual meanings.",
+                  "If E is the internal energy of a gas, S is the entropy, Show that $T dS = dE + P dV$ where all symbols have their usual meanings.",
                 marks: 5,
                 solution: `### Thermodynamic Relation
 
@@ -6397,6 +6367,7 @@ This equation is a fundamental thermodynamic identity relating temperature ($T$)
       },
       {
         year: "2019-2020",
+        session: "2019-2020",
         sections: [
           {
             title: "Section-A",
@@ -6992,6 +6963,7 @@ $$ \\implies z_{cp} : \\bar{h} = 23 : 18 $$
       },
       {
         year: "2020-2021",
+        session: "2020-2021",
         sections: [
           {
             title: "Section-A",
@@ -7186,7 +7158,7 @@ These are the three scalar components of Euler's equation in Cartesian coordinat
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Derive the energy equation of motion of the following form: $\\frac{d}{dt} (T '+' V '+' J) = 0$ where all symbols have their usual meaning.",
+                  "Derive the energy equation of motion of the following form: $\\frac{d}{dt} (T + V + J) = 0$ where all symbols have their usual meaning.",
                 marks: 5,
                 solution: `### Energy Equation of Motion
 
@@ -7267,7 +7239,7 @@ The kinetic energy of an irrotational motion of an incompressible fluid occupyin
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "Show that $\\frac{x^2}{a^2} \\tan^2 t '+' \\frac{y^2}{b^2} \\cot^2 t = 1$ is a possible form for the boundary surface of a liquid and find an expression for the normal velocity.",
+                  "Show that $\\frac{x^2}{a^2} \\tan^2 t + \\frac{y^2}{b^2} \\cot^2 t = 1$ is a possible form for the boundary surface of a liquid and find an expression for the normal velocity.",
                 marks: 5,
                 solution: `### Boundary Surface and Normal Velocity
 
@@ -7623,6 +7595,7 @@ Both methods yield the same result. The centre of pressure is at a depth of $\\f
       },
       {
         year: "2024-2025(22)",
+        session: "2024-2025(22)",
         sections: [
           {
             title: "Section-A",
@@ -7707,7 +7680,7 @@ $$ u = -\\frac{\\partial \\phi}{\\partial x}, \\quad v = -\\frac{\\partial \\phi
                 id: "2a",
                 part: "2. (a)",
                 question:
-                  "Given the velocity components: $u = \\frac{ax-by}{x^2'+'y^2}$, $v = \\frac{ay'+'bx}{x^2'+'y^2}$. Explain these components for a possible fluid flow. Also test its rotationality.",
+                  "Given the velocity components: $u = \\frac{ax-by}{x^2+y^2}$, $v = \\frac{ay+bx}{x^2+y^2}$. Explain these components for a possible fluid flow. Also test its rotationality.",
                 marks: 4,
                 solution: `### Fluid Flow and Rotationality
 
@@ -7847,7 +7820,7 @@ where $P$ is pressure, $\\rho$ is density, $q$ is the velocity magnitude, and $V
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Derive Euler's equation of motion in the form $\\frac{\\partial \\mathbf{q}}{\\partial t} '+' \\nabla(\\frac{1}{2}q^2) - \\mathbf{q} \\times \\text{curl}\\mathbf{q} = \\mathbf{F} - \\frac{1}{\\rho}\\nabla P$",
+                  "Derive Euler's equation of motion in the form $\\frac{\\partial \\mathbf{q}}{\\partial t} + \\nabla(\\frac{1}{2}q^2) - \\mathbf{q} \\times \\text{curl}\\mathbf{q} = \\mathbf{F} - \\frac{1}{\\rho}\\nabla P$",
                 marks: 5,
                 solution: `### Euler's Equation in Lamb's Form
 
@@ -7938,7 +7911,7 @@ $$ \\boxed{ \\psi = U c e^{\\xi_0} \\sinh(\\xi - \\xi_0) \\sin \\eta } $$
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "Prove that the velocity function $V = (r '+' \\frac{a^2}{r}) \\cos \\theta$ represents a streaming motion past a fixed circular cylinder.",
+                  "Prove that the velocity function $V = (r + \\frac{a^2}{r}) \\cos \\theta$ represents a streaming motion past a fixed circular cylinder.",
                 marks: 5,
                 solution: `### Streaming Motion Past a Cylinder
 
@@ -8157,7 +8130,7 @@ This shows that the circulation around a closed circuit is exactly equal to the 
                 id: "7b",
                 part: "7. (b)",
                 question:
-                  "Calculate the circulation of the field $\\mathbf{q} = -y\\hat{i} '+' x\\hat{j}$ round a square with corners (1, 0), (2, 0), (2, 1) and (1, 1).",
+                  "Calculate the circulation of the field $\\mathbf{q} = -y\\hat{i} + x\\hat{j}$ round a square with corners (1, 0), (2, 0), (2, 1) and (1, 1).",
                 marks: 5,
                 solution: `### Calculation of Circulation
 
@@ -8308,7 +8281,7 @@ where $f, g, h$ are continuous functions of the parameter $t$ defined on some in
                 id: "1b",
                 part: "1. (b)",
                 question:
-                  "Draw the graph of the vector valued functions: (i) $\mathbf{r}(t) = \cos t\hat{i} '+' \sin t\hat{j} ; 0 \le t \le 2\pi$ (ii) $\mathbf{r}(t) = \cos t\hat{i} '+' \sin t\hat{j} '+' 2\hat{k} ; 0 \le t \le 2\pi$.",
+                  "Draw the graph of the vector valued functions: (i) $\\mathbf{r}(t) = \\cos t\\hat{i} + \\sin t\\hat{j} ; 0 \\le t \\le 2\\pi$ (ii) $\\mathbf{r}(t) = \\cos t\\hat{i} + \\sin t\\hat{j} + 2\\hat{k} ; 0 \\le t \\le 2\\pi$.",
                 marks: 5,
                 solution: `### Graphs of Vector-Valued Functions
 
@@ -8326,7 +8299,7 @@ where $f, g, h$ are continuous functions of the parameter $t$ defined on some in
                 id: "2a",
                 part: "2. (a)",
                 question:
-                  "Define the derivative of the vector-valued function. Explain why $\mathbf{r}'(t)$ is always directed to the positive side.",
+                  "Define the derivative of the vector-valued function. Explain why $\\mathbf{r}'(t)$ is always directed to the positive side.",
                 marks: 5,
                 solution: `### Derivative of a Vector-Valued Function
 
@@ -8348,7 +8321,7 @@ Geometrically, $\\mathbf{r}(t)$ is the position vector of a point $P$ on the cur
                 id: "2b",
                 part: "2. (b)",
                 question:
-                  "Find the parametric equations of the tangent line to the circular helix $x = \cos t, y = \sin t, z = t$.",
+                  "Find the parametric equations of the tangent line to the circular helix $x = \\cos t, y = \\sin t, z = t$.",
                 marks: 5,
                 solution: `### Tangent Line to the Circular Helix
 
@@ -8381,7 +8354,7 @@ where $s$ is a real parameter.`,
                 id: "3a",
                 part: "3. (a)",
                 question:
-                  "Find the tangent line to the curve $\mathbf{r}(t) = e^{-2t}\hat{i} '+' \cos t\hat{j} '+' 3\sin t\hat{k}$ at the point (1, 1, 0) and intersects the yz-plane.",
+                  "Find the tangent line to the curve $\\mathbf{r}(t) = e^{-2t}\\hat{i} + \\cos t\\hat{j} + 3\\sin t\\hat{k}$ at the point (1, 1, 0) and intersects the yz-plane.",
                 marks: 5,
                 solution: `### Tangent Line and Intersection
 
@@ -8489,7 +8462,7 @@ This new parameterization $\\mathbf{R}(s)$ is guaranteed to be smooth and has th
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "Find the arc length of the curve $x = \cos t, y = \sin t, z = t$ from $t = 0$ to $t = \pi$.",
+                  "Find the arc length of the curve $x = \\cos t, y = \\sin t, z = t$ from $t = 0$ to $t = \\pi$.",
                 marks: 5,
                 solution: `### Arc Length of the Curve
 
@@ -8567,7 +8540,7 @@ $\\mathbf{n}' = -\\kappa \\mathbf{t} + \\tau \\mathbf{b}$`,
                 id: "5b",
                 part: "5. (b)",
                 question:
-                  "Find the minimum value of the radius of the curvature for the curve $x = e^t$, $y = e^{-t}$, $z = \sqrt{2} t$.",
+                  "Find the minimum value of the radius of the curvature for the curve $x = e^t$, $y = e^{-t}$, $z = \\sqrt{2} t$.",
                 marks: 5,
                 solution: `### Minimum Radius of Curvature
 
@@ -8668,7 +8641,7 @@ Thus, the locus of the centre of curvature is an evolute if and only if the tors
                 id: "7a",
                 part: "7. (a)",
                 question:
-                  "Define curvature. Find the curvature of the circular helix: $x = a\cos t, y = a\sin t, z = ct, a > 0$.",
+                  "Define curvature. Find the curvature of the circular helix: $x = a\\cos t, y = a\\sin t, z = ct, a > 0$.",
                 marks: 5,
                 solution: `### Curvature and Circular Helix
 
@@ -8763,7 +8736,7 @@ By the Inverse Function Theorem, if the Jacobian is non-zero at a point ($J \\ne
                 id: "8b",
                 part: "8. (b)",
                 question:
-                  "Find the radii of curvature and torsion of the helix $x = a\cos u, y = a\sin u, z = au\tan\alpha$.",
+                  "Find the radii of curvature and torsion of the helix $x = a\\cos u, y = a\\sin u, z = au\\tan\\alpha$.",
                 marks: 6,
                 solution: `### Radii of Curvature and Torsion of a Helix
 
@@ -8850,7 +8823,7 @@ If $f, g, h$ are differentiable, the curve is said to be a differentiable space 
                 id: "1c",
                 part: "1. (c)",
                 question:
-                  "Find the length of the curve given as the intersection of two surfaces $x^2 - y^2 = a^2$ and $x = a \cosh(z/a)$ from the point $(a, 0, 0)$ to the point $(x, y, z)$.",
+                  "Find the length of the curve given as the intersection of two surfaces $x^2 - y^2 = a^2$ and $x = a \\cosh(z/a)$ from the point $(a, 0, 0)$ to the point $(x, y, z)$.",
                 marks: 5,
                 solution: `### Length of Curve of Intersection
 
@@ -8902,7 +8875,7 @@ The length of the curve is **$s = \\sqrt{2} y$**.`,
                 id: "2a",
                 part: "2. (a)",
                 question:
-                  "Give the definition of tangent line. Show that $\frac{d\mathbf{r}}{ds} = \mathbf{t}$ is the unit tangent vector to a space curve at the point $p(\mathbf{r})$.",
+                  "Give the definition of tangent line. Show that $\\frac{d\\mathbf{r}}{ds} = \\mathbf{t}$ is the unit tangent vector to a space curve at the point $p(\\mathbf{r})$.",
                 marks: 5,
                 solution: `### Tangent Line and Unit Tangent Vector
 
@@ -8928,7 +8901,7 @@ Thus, $\\mathbf{t} = \\frac{d\\mathbf{r}}{ds}$.`,
                 id: "2b",
                 part: "2. (b)",
                 question:
-                  "Show that the tangent at the point of a curve of intersection of the ellipsoid $\frac{x^2}{a^2} '+' \frac{y^2}{b^2} '+' \frac{z^2}{c^2} = 1$ and the confocal whose parameter is $\lambda$ can be given by $\frac{x(X-x)}{a^2(b^2-c^2)(a^2-\lambda)} = \frac{y(Y-y)}{b^2(c^2-a^2)(b^2-\lambda)} = \frac{z(Z-z)}{c^2(a^2-b^2)(c^2-\lambda)}$.",
+                  "Show that the tangent at the point of a curve of intersection of the ellipsoid $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2} = 1$ and the confocal whose parameter is $\\lambda$ can be given by $\\frac{x(X-x)}{a^2(b^2-c^2)(a^2-\\lambda)} = \\frac{y(Y-y)}{b^2(c^2-a^2)(b^2-\\lambda)} = \\frac{z(Z-z)}{c^2(a^2-b^2)(c^2-\\lambda)}$.",
                 marks: 5,
                 solution: `### Tangent to the Intersection of Confocal Quadrics
 
@@ -9018,7 +8991,7 @@ $\\mathbf{n}' = -\\tau(-\\mathbf{b}) + \\kappa(-\\mathbf{t}) = -\\kappa \\mathbf
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Prove that the osculating plane at $(x_1, y_1, z_1)$ on the curve of intersection of the cylinders $x^2 '+' z^2 = a^2, y^2 '+' z^2 = b^2$ is given by a specific equation.",
+                  "Prove that the osculating plane at $(x_1, y_1, z_1)$ on the curve of intersection of the cylinders $x^2 + z^2 = a^2, y^2 + z^2 = b^2$ is given by a specific equation.",
                 marks: 5,
                 solution: `### Osculating Plane of Intersecting Cylinders
 
@@ -9465,7 +9438,7 @@ This is the vector form for the arc length. In terms of components, it is $\\int
                 id: "1b",
                 part: "1. (b)",
                 question:
-                  "Find the length of the curve given as the intersection of the surfaces $x^2 - y^2 = a^2$ and $x = a \cosh(z/a)$ from the point $(a, 0, 0)$ to the point $(x, y, z)$.",
+                  "Find the length of the curve given as the intersection of the surfaces $x^2 - y^2 = a^2$ and $x = a \\cosh(z/a)$ from the point $(a, 0, 0)$ to the point $(x, y, z)$.",
                 marks: 4,
                 solution: `### Length of Curve of Intersection
 
@@ -9513,7 +9486,7 @@ The length of the curve is **$s = \\sqrt{2} y$**.`,
                 id: "2a",
                 part: "2. (a)",
                 question:
-                  "What is a tangent line? Show that $\frac{d\mathbf{r}}{ds} = \mathbf{t}$ is a unit tangent vector to a space curve at point $p(\mathbf{r})$.",
+                  "What is a tangent line? Show that $\\frac{d\\mathbf{r}}{ds} = \\mathbf{t}$ is a unit tangent vector to a space curve at point $p(\\mathbf{r})$.",
                 marks: 5,
                 solution: `### Tangent Line and Unit Tangent Vector
 
@@ -9539,7 +9512,7 @@ Thus, $\\mathbf{t} = \\frac{d\\mathbf{r}}{ds}$.`,
                 id: "2b",
                 part: "2. (b)",
                 question:
-                  "Show that the tangent at a point of the curve of intersection of an ellipsoid and the confocal whose parameter is $\lambda$ can be given by $\frac{x(X-x)}{a^2(b^2-c^2)(a^2-\lambda)} = \frac{y(Y-y)}{b^2(c^2-a^2)(b^2-\lambda)} = \frac{z(Z-z)}{c^2(a^2-b^2)(c^2-\lambda)}$.",
+                  "Show that the tangent at a point of the curve of intersection of an ellipsoid and the confocal whose parameter is $\\lambda$ can be given by $\\frac{x(X-x)}{a^2(b^2-c^2)(a^2-\\lambda)} = \\frac{y(Y-y)}{b^2(c^2-a^2)(b^2-\\lambda)} = \\frac{z(Z-z)}{c^2(a^2-b^2)(c^2-\\lambda)}$.",
                 marks: 5,
                 solution: `### Tangent to the Intersection of Confocal Quadrics
 
@@ -9610,7 +9583,7 @@ $\\mathbf{n}' = \\mathbf{b}' \\times \\mathbf{t} + \\mathbf{b} \\times \\mathbf{
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Determine a, h, b so that the paraboloid $2z = ax^2 '+' 2hxy '+' by^2$ may have the closest possible contact at the origin with the curves $x=t^3-2t^2'+'1, y=t^3-1, z=t^2-2t'+'1$. Also find the order of contact.",
+                  "Determine a, h, b so that the paraboloid $2z = ax^2 + 2hxy + by^2$ may have the closest possible contact at the origin with the curves $x=t^3-2t^2+1, y=t^3-1, z=t^2-2t+1$. Also find the order of contact.",
                 marks: 5,
                 solution: `### Contact of Paraboloid and Curve
 
@@ -9666,7 +9639,7 @@ The order of contact is **4th order** (5-point contact).`,
                 id: "4a",
                 part: "4. (a)",
                 question:
-                  "Show that $\rho = -\sigma = \frac{3}{2} (1'+'2u^2)^2$ for the curve $x = 3u-u^3, y = 3u^2, z = 3u'+'u^3$.",
+                  "Show that $\\rho = -\\sigma = \\frac{3}{2} (1+2u^2)^2$ for the curve $x = 3u-u^3, y = 3u^2, z = 3u+u^3$.",
                 marks: 5,
                 solution: `### Curvature and Torsion of a Curve
 
@@ -9703,7 +9676,7 @@ So, $\\rho = 2\\sigma$. The problem statement $\\rho = -\\sigma$ must be for a s
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "On the bi-normal of a curve of constant torsion $\tau$, a point Q is taken at a constant distance c from the curve. Show that the bi-normal to the locus of Q is inclined to the bi-normal of the given curve at an angle $\tan^{-1}\left(\frac{c\tau}{\dots}\right)$.",
+                  "On the bi-normal of a curve of constant torsion $\\tau$, a point Q is taken at a constant distance c from the curve. Show that the bi-normal to the locus of Q is inclined to the bi-normal of the given curve at an angle $\\tan^{-1}\\left(\\frac{c\\tau}{\\dots}\\right)$.",
                 marks: 5,
                 solution: `### Bi-normal of a Locus
 
@@ -9820,7 +9793,7 @@ $$ \\tau_n = \\frac{\\kappa^2(\\kappa\\tau'' - \\kappa''\\tau) - \\kappa\\tau(\\
                 id: "6b",
                 part: "6. (b)",
                 question:
-                  "What is circular helix? Find the involutes and evolutes of the circular helix $x = a \cos \theta, y = a\sin \theta, z = a\theta \tan\alpha$.",
+                  "What is circular helix? Find the involutes and evolutes of the circular helix $x = a \\cos \\theta, y = a\\sin \\theta, z = a\\theta \\tan\\alpha$.",
                 marks: 5,
                 solution: `### Involutes and Evolutes of Circular Helix
 
@@ -9887,7 +9860,7 @@ $N = \\mathbf{N} \\cdot \\mathbf{r}_{yy} = \\frac{\\langle -p, -q, 1 \\rangle}{\
                 id: "7b",
                 part: "7. (b)",
                 question:
-                  "What do you mean by a circular helix? Obtain the equations of a circular helix $\mathbf{r} = (a\cos u, a\sin u, bu)$ in the interval $-\infty < u < \infty$.",
+                  "What do you mean by a circular helix? Obtain the equations of a circular helix $\\mathbf{r} = (a\\cos u, a\\sin u, bu)$ in the interval $-\\infty < u < \\infty$.",
                 marks: 5,
                 solution: `### Circular Helix
 
@@ -10090,7 +10063,7 @@ $$ l = \\frac{J_1}{\\sqrt{J_1^2 + J_2^2 + J_3^2}}, \\quad m = \\frac{J_2}{\\sqrt
                 id: "3a",
                 part: "3. (a)",
                 question:
-                  "Find the equation of the plane that has three point contact at the origin with the curve $x=t^3-2t^2'+'t, y=t^3-1, z=t^2-2t'+'1$.",
+                  "Find the equation of the plane that has three point contact at the origin with the curve $x=t^3-2t^2+t, y=t^3-1, z=t^2-2t+1$.",
                 marks: 5,
                 solution: `### Plane with 3-Point Contact
 
@@ -10159,7 +10132,7 @@ $$ \\frac{3x}{a} - \\frac{3y}{b} + \\frac{z}{c} = 1 $$`,
                 id: "4a",
                 part: "4. (a)",
                 question:
-                  "On the bi-normal of a curve of constant torsion $\tau$, a point $Q$ is taken at a constant distance $c$ from the curve. Show that the bi-normal to the locus of $Q$ is inclined to the bi-normal of the given curve at an angle $\tan^{-1}(c\tau / \dots)$.",
+                  "On the bi-normal of a curve of constant torsion $\\tau$, a point $Q$ is taken at a constant distance $c$ from the curve. Show that the bi-normal to the locus of $Q$ is inclined to the bi-normal of the given curve at an angle $\\tan^{-1}(c\\tau / \\dots)$.",
                 marks: 5,
                 solution: `### Angle Between Bi-normals
 
@@ -10245,7 +10218,7 @@ $$ \\frac{X - x_0}{-p} = \\frac{Y - y_0}{-q} = \\frac{Z - z_0}{1} $$`,
                 id: "5b",
                 part: "5. (b)",
                 question:
-                  "If a curve lies on a sphere, show that a necessary and sufficient condition is that $\frac{d}{ds}\left(\rho \frac{d\rho}{ds}\right) '+' \frac{\rho}{\sigma^2} = 0$.",
+                  "If a curve lies on a sphere, show that a necessary and sufficient condition is that $\\frac{d}{ds}\\left(\\rho \\frac{d\\rho}{ds}\\right) + \\frac{\\rho}{\\sigma^2} = 0$.",
                 marks: 4,
                 solution: `### Condition for a Curve to Lie on a Sphere
 
@@ -10317,7 +10290,7 @@ A general helix is a space curve whose tangent vector makes a constant angle wit
                 id: "6b",
                 part: "6. (b)",
                 question:
-                  "Find the involutes and evolutes of the circular helix $x=a\cos\theta, y=a\sin\theta, z=a\theta\tan\alpha$.",
+                  "Find the involutes and evolutes of the circular helix $x=a\\cos\\theta, y=a\\sin\\theta, z=a\\theta\\tan\\alpha$.",
                 marks: 5,
                 solution: `### Involutes and Evolutes of Circular Helix
 
@@ -10410,7 +10383,7 @@ Therefore, if the tangent indicatrix is a plane curve (a circle on the sphere), 
                 id: "8b",
                 part: "8. (b)",
                 question:
-                  "Find the first and second fundamental magnitudes for the surface $2z = ax^2 '+' 2hxy '+' by^2$, where $x, y$ are parameters.",
+                  "Find the first and second fundamental magnitudes for the surface $2z = ax^2 + 2hxy + by^2$, where $x, y$ are parameters.",
                 marks: 5,
                 solution: `### Fundamental Magnitudes
 
@@ -10509,7 +10482,7 @@ $$ L = \\int_{t_1}^{t_2} \\frac{ds}{dt} dt = \\int_{t_1}^{t_2} \\left| \\frac{d\
                 id: "2a",
                 part: "2. (a)",
                 question:
-                  "Show that $\mathbf{t}$ is unit tangent vector to a space curve at the point $p(\mathbf{r})$.",
+                  "Show that $\\mathbf{t}$ is unit tangent vector to a space curve at the point $p(\\mathbf{r})$.",
                 marks: 5,
                 solution: `### Unit Tangent Vector $\\mathbf{t}$
 
@@ -10532,7 +10505,7 @@ Hence, $\\mathbf{t} = \\frac{d\\mathbf{r}}{ds}$ is the unit tangent vector to th
                 id: "2b",
                 part: "2. (b)",
                 question:
-                  "Define Osculating plane at a point on a space curve. Show that at the point $u$ of the curve $\mathbf{r} = \mathbf{r}(u)$ the equation to the Osculating plane is given by $[\mathbf{R} - \mathbf{r}, \dot{\mathbf{r}}, \ddot{\mathbf{r}}] = 0$.",
+                  "Define Osculating plane at a point on a space curve. Show that at the point $u$ of the curve $\\mathbf{r} = \\mathbf{r}(u)$ the equation to the Osculating plane is given by $[\\mathbf{R} - \\mathbf{r}, \\dot{\\mathbf{r}}, \\ddot{\\mathbf{r}}] = 0$.",
                 marks: 5,
                 solution: `### Osculating Plane
 
@@ -10581,7 +10554,7 @@ Since this value is independent of $u$, the tangent makes a constant angle with 
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Show that principal normal at consecutive points do not intersect unless $\tau = 0$.",
+                  "Show that principal normal at consecutive points do not intersect unless $\\tau = 0$.",
                 marks: 5,
                 solution: `### Intersection of Consecutive Principal Normals
 
@@ -10602,7 +10575,7 @@ Thus, the principal normals at consecutive points intersect if and only if $\\ta
                 id: "4a",
                 part: "4. (a)",
                 question:
-                  "Prove that for any curve $[\mathbf{t}, \mathbf{t}', \mathbf{t}''] = \kappa^5 \frac{d}{ds}\left(\frac{\tau}{\kappa}\right)$.",
+                  "Prove that for any curve $[\\mathbf{t}, \\mathbf{t}', \\mathbf{t}''] = \\kappa^5 \\frac{d}{ds}\\left(\\frac{\\tau}{\\kappa}\\right)$.",
                 marks: 5,
                 solution: `### Prove $[\\mathbf{t}, \\mathbf{t}', \\mathbf{t}''] = \\kappa^5 \\frac{d}{ds}\\left(\\frac{\\tau}{\\kappa}\\right)$
 
@@ -10697,7 +10670,7 @@ $\\mathbf{b}' = -\\tau \\mathbf{n}$`,
                 id: "4c",
                 part: "4. (c)",
                 question:
-                  "Prove that necessary and sufficient condition for a curve to be a plane curve is $\tau = 0$.",
+                  "Prove that necessary and sufficient condition for a curve to be a plane curve is $\\tau = 0$.",
                 marks: 5,
                 solution: `### Condition for a Plane Curve
 
@@ -10734,7 +10707,7 @@ Therefore, the position vector $\\mathbf{r}(s)$ always satisfies the equation of
                 id: "5a",
                 part: "5. (a)",
                 question:
-                  "Define circular helix. Show that the equation of a circular helix is $r = (a \cos \theta, a \sin \theta, b \theta)$.",
+                  "Define circular helix. Show that the equation of a circular helix is $r = (a \\cos \\theta, a \\sin \\theta, b \\theta)$.",
                 marks: 5,
                 solution: `### Circular Helix
 
@@ -10823,7 +10796,7 @@ Since $\\mathbf{t} \\cdot \\mathbf{a} = \\cos\\alpha$ is constant, the angle is 
                 id: "6b",
                 part: "6. (b)",
                 question:
-                  "What are the spherical indicatrices? Show that the radii of curvature and torsion of the spherical indicatrix of the binormal are $\dots$.",
+                  "What are the spherical indicatrices? Show that the radii of curvature and torsion of the spherical indicatrix of the binormal are $\\dots$.",
                 marks: 5,
                 solution: `### Spherical Indicatrices
 
@@ -10921,7 +10894,7 @@ The first fundamental form $I = E du^2 + 2F du dv + G dv^2$ measures small dista
                 id: "8b",
                 part: "8. (b)",
                 question:
-                  "Calculate the fundamental magnitudes for the surface of revolution $x = u\cos v, y = u\sin v, z = f(u)$ with $u, v$ as parameters.",
+                  "Calculate the fundamental magnitudes for the surface of revolution $x = u\\cos v, y = u\\sin v, z = f(u)$ with $u, v$ as parameters.",
                 marks: 5,
                 solution: `### Fundamental Magnitudes of Surface of Revolution
 
@@ -11004,7 +10977,7 @@ $$ \\mathbf{r}(t) = x(t)\\hat{i} + y(t)\\hat{j} + z(t)\\hat{k} = \\langle x(t), 
                 id: "1c",
                 part: "1. (c)",
                 question:
-                  "Find the length of the curve given as the intersection of the surfaces $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ and $x = a \cosh(\frac{z}{a})$ from the point $(a, 0,0)$ to the point $(x, y, z)$.",
+                  "Find the length of the curve given as the intersection of the surfaces $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$ and $x = a \\cosh(\\frac{z}{a})$ from the point $(a, 0,0)$ to the point $(x, y, z)$.",
                 marks: 3,
                 solution: `### Length of Intersecting Curve
 
@@ -11109,7 +11082,7 @@ At any regular point on a space curve, there exists a moving orthogonal frame co
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Show that principal normal at consecutive points do not intersect unless $\tau = 0$.",
+                  "Show that principal normal at consecutive points do not intersect unless $\\tau = 0$.",
                 marks: 3,
                 solution: `### Intersection of Consecutive Principal Normals
 
@@ -11130,7 +11103,7 @@ Thus, the principal normals at consecutive points intersect if and only if $\\ta
                 id: "3c",
                 part: "3. (c)",
                 question:
-                  "Prove that there are three points on the cubic $x = at^3 '+' b, y = 3ct^2 '+' 3dt, z = 3et '+' f$ such that the osculating planes pass through origin and that the points lie in the plane $3cex '+' afy = 0$.",
+                  "Prove that there are three points on the cubic $x = at^3 + b, y = 3ct^2 + 3dt, z = 3et + f$ such that the osculating planes pass through origin and that the points lie in the plane $3cex + afy = 0$.",
                 marks: 4,
                 solution: `### Osculating Planes of a Cubic Passing Through Origin
 
@@ -11202,7 +11175,7 @@ $\\mathbf{b}' = -\\tau \\mathbf{n}$`,
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "Prove that necessary and sufficient condition for a curve to be a plane curve is $\tau = 0$.",
+                  "Prove that necessary and sufficient condition for a curve to be a plane curve is $\\tau = 0$.",
                 marks: 3,
                 solution: `### Condition for a Plane Curve
 
@@ -11299,7 +11272,7 @@ Thus, $\\frac{\\kappa}{\\tau} = \\text{constant}$.`,
                 id: "6a",
                 part: "6. (a)",
                 question:
-                  "Prove that the curve $x = au, y = bu^2, z = cu^3$ is a helix if $3ac = \pm 2b^2$.",
+                  "Prove that the curve $x = au, y = bu^2, z = cu^3$ is a helix if $3ac = \\pm 2b^2$.",
                 marks: 5,
                 solution: `### Helix Condition for a Twisted Cubic
 
@@ -11389,7 +11362,7 @@ Thus, $\\mathbf{r}(s) = \\mathbf{r}^*(s)$ for all $s$, proving the curves are id
                 id: "7a",
                 part: "7. (a)",
                 question:
-                  "When a curve lies on a sphere, then prove that $\rho$ and $\sigma$ are related by $\frac{d}{ds}\left(\sigma \frac{d\rho}{ds}\right) '+' \frac{\rho}{\sigma} = 0$.",
+                  "When a curve lies on a sphere, then prove that $\\rho$ and $\\sigma$ are related by $\\frac{d}{ds}\\left(\\sigma \\frac{d\\rho}{ds}\\right) + \\frac{\\rho}{\\sigma} = 0$.",
                 marks: 5,
                 solution: `### Curve on a Sphere
 
@@ -11508,7 +11481,7 @@ This volume is constant, independent of the choice of point $P(x_0, y_0, z_0)$.`
                 id: "8c",
                 part: "8. (c)",
                 question:
-                  "Calculate the fundamental magnitudes and the normal of the surface $2z = ax^2 '+' 2hxy '+' by^2$.",
+                  "Calculate the fundamental magnitudes and the normal of the surface $2z = ax^2 + 2hxy + by^2$.",
                 marks: 5,
                 solution: `### Fundamental Magnitudes and Normal
 
@@ -11655,7 +11628,7 @@ $$ [\\mathbf{R} - \\mathbf{r}, \\mathbf{t}, \\mathbf{r}^{(k)}(0)] = 0 $$`,
                 id: "3a",
                 part: "3. (a)",
                 question:
-                  "Determine $a, h, b$ so that the paraboloid $2z=ax^2'+'2hxy'+'by^2$ may have the closest possible contact at the origin with the curves $x=t^3-2t^2'+'1, y=t^3-1, z=t^2-2t'+'1$. Also find the order of contact.",
+                  "Determine $a, h, b$ so that the paraboloid $2z=ax^2+2hxy+by^2$ may have the closest possible contact at the origin with the curves $x=t^3-2t^2+1, y=t^3-1, z=t^2-2t+1$. Also find the order of contact.",
                 marks: 4,
                 solution: `### Closest Contact Between Curve and Surface
 
@@ -11688,7 +11661,7 @@ $F''(1) = 2a(-1)^2 + 2b(3)^2 + 0 + 2(2h)(-1)(3) + 0 + 0 + 0 + 0 - 2(2)$
 $= 2a + 18b - 12h - 4$.
 For 3-point contact, $F''(1) = 0 \\implies 2a - 12h + 18b - 4 = 0 \\implies a - 6h + 9b = 2$.
 
-$F'''(1) = rac{d}{dt} [ F_{xx}(x')^2 + \\dots ]$.
+$F'''(1) = \\frac{d}{dt} [ F_{xx}(x')^2 + \\dots ]$.
 $= F_{xxx}(x')^3 + \\dots + 3F_{xx}x'x'' + 3F_{yy}y'y'' + 3F_{xy}(x''y' + x'y'') + F_z z'''$.
 Since $F$ is quadratic, all third partial derivatives are 0.
 $F'''(1) = 3(2a)(-1)(2) + 3(2b)(3)(6) + 3(2h)( (2)(3) + (-1)(6) ) + (-2)(0)$
@@ -11743,7 +11716,7 @@ Let a space curve be given by $\\mathbf{r} = \\mathbf{r}(t)$.
                 id: "4a",
                 part: "4. (a)",
                 question:
-                  "Prove that there are three points on the cubic $x=at^3'+'b, y=3ct^2'+'3dt, z=3et'+'f$ such that the osculating planes pass through the origin and that the points lie in the plane $3cex'+'afy=0$.",
+                  "Prove that there are three points on the cubic $x=at^3+b, y=3ct^2+3dt, z=3et+f$ such that the osculating planes pass through the origin and that the points lie in the plane $3cex+afy=0$.",
                 marks: 6,
                 solution: `### Osculating Planes of a Cubic Passing Through Origin
 
@@ -11779,7 +11752,7 @@ Therefore, $3cex + afy = 0$ for these three points, meaning they lie on this pla
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "Find the radii of curvature and torsion at any point of the curve $x^2'+'y^2=a^2, x^2-y^2=az$.",
+                  "Find the radii of curvature and torsion at any point of the curve $x^2+y^2=a^2, x^2-y^2=az$.",
                 marks: 5,
                 solution: `### Curvature and Torsion of Intersection Curve
 
@@ -11826,7 +11799,7 @@ $\\sigma = \\frac{1}{\\tau} = \\frac{|\\mathbf{r}' \\times \\mathbf{r}''|^2}{[\\
                 id: "4c",
                 part: "4. (c)",
                 question:
-                  "Given curve $\mathbf{r} = (a e^u\cos u, a e^u\sin u, b e^u)$. Find at any point u of this curve (i) the equation of the tangent, (ii) the equation of the normal plane, (iii) the curvature, (iv) the unit principle normal vector n, (v) the equation of Principle vector.",
+                  "Given curve $\\mathbf{r} = (a e^u\\cos u, a e^u\\sin u, b e^u)$. Find at any point u of this curve (i) the equation of the tangent, (ii) the equation of the normal plane, (iii) the curvature, (iv) the unit principle normal vector n, (v) the equation of Principle vector.",
                 marks: 5,
                 solution: `### Curve Properties
 
@@ -11873,7 +11846,7 @@ $$ \\frac{X - ae^u\\cos u}{-(\\cos u + \\sin u)} = \\frac{Y - ae^u\\sin u}{\\cos
                 id: "5a",
                 part: "5. (a)",
                 question:
-                  "If a curve is drawn on any cylinder and makes a constant angle $\alpha$ with the generators, show that $\rho = \rho_0 \csc^2\alpha$ and $\sigma = \rho_0 / (\sin\alpha \cos\alpha)$ where $\rho$ and $\rho_0$ are radii of curvatures of any point P of the curve and the normal section of the cylinder through P.",
+                  "If a curve is drawn on any cylinder and makes a constant angle $\\alpha$ with the generators, show that $\\rho = \\rho_0 \\csc^2\\alpha$ and $\\sigma = \\rho_0 / (\\sin\\alpha \\cos\\alpha)$ where $\\rho$ and $\\rho_0$ are radii of curvatures of any point P of the curve and the normal section of the cylinder through P.",
                 marks: 5,
                 solution: `### Curve on a Cylinder (Helix)
 
@@ -11911,7 +11884,7 @@ In terms of radii: $\\frac{1}{\\sigma} = \\frac{1}{\\rho_0} \\sin\\alpha \\cos\\
                 id: "5b",
                 part: "5. (b)",
                 question:
-                  "Obtain the equation of a circular helix where $a > 0$ referred to $s$ as parameter and show that the length of one complete turn of the helix is $2\pi c$ where $c = \sqrt{a^2'+'b^2}$.",
+                  "Obtain the equation of a circular helix where $a > 0$ referred to $s$ as parameter and show that the length of one complete turn of the helix is $2\\pi c$ where $c = \\sqrt{a^2+b^2}$.",
                 marks: 5,
                 solution: `### Circular Helix Arc Length Parameterization
 
@@ -11934,7 +11907,7 @@ Therefore, the length of one complete turn of the circular helix is $2\\pi c$, w
                 id: "6a",
                 part: "6. (a)",
                 question:
-                  "Find the equation for the tangent plane to the surface $z = x^2 '+' y^2$ at the point $(1, -1, 2)$.",
+                  "Find the equation for the tangent plane to the surface $z = x^2 + y^2$ at the point $(1, -1, 2)$.",
                 marks: 5,
                 solution: `### Tangent Plane to $z = x^2 + y^2$
 
@@ -11981,7 +11954,7 @@ $$ \\hat{\\mathbf{n}} = \\frac{1}{\\sqrt{122}} \\langle 7, -3, 8 \\rangle = \\le
                 id: "7a",
                 part: "7. (a)",
                 question:
-                  "Prove that if $\kappa(s)$ and $\tau(s)$ are continuous functions of a real variable $s \ge 0$, then there exists a space curve for which $\kappa$ is the curvature, $\tau$ is the torsion, and $s$ is the arc length measured from some suitable base point.",
+                  "Prove that if $\\kappa(s)$ and $\\tau(s)$ are continuous functions of a real variable $s \\ge 0$, then there exists a space curve for which $\\kappa$ is the curvature, $\\tau$ is the torsion, and $s$ is the arc length measured from some suitable base point.",
                 marks: 5,
                 solution: `### Existence Part of Fundamental Theorem
 
@@ -12094,7 +12067,7 @@ $E du^2 = G dv^2 \\implies E du^2 - G dv^2 = 0$.
                 id: "1a",
                 part: "1. (a)",
                 question:
-                  "What do you mean by differentiable functions from $\mathbb{R}^n$ to $\mathbb{R}^m$? Show that the function $f: \mathbb{R}^2 \to \mathbb{R}^2$ given by $f(x_1, x_2) = (x_1 x_2, x_1^2)$ is differentiable. Find $f'(x)$.",
+                  "What do you mean by differentiable functions from $\\mathbb{R}^n$ to $\\mathbb{R}^m$? Show that the function $f: \\mathbb{R}^2 \\to \\mathbb{R}^2$ given by $f(x_1, x_2) = (x_1 x_2, x_1^2)$ is differentiable. Find $f'(x)$.",
                 marks: 5,
                 solution: `### Differentiable Functions
 
@@ -12120,7 +12093,7 @@ $$ f'(x) = \\begin{pmatrix} \\frac{\\partial f_1}{\\partial x_1} & \\frac{\\part
                 id: "1b",
                 part: "1. (b)",
                 question:
-                  "For $p \in \mathbb{R}^3$ and $\mathbf{v} \in \mathbb{R}^3_p$, let $f: \mathbb{R}^3 \to \mathbb{R}$ be a function. Define the directional derivative of $f$ at $p$ in the direction $\mathbf{v}$. Let $f = x^2 y z$. Find the directional derivative $v_p[f]$ at $p = (1, 1, 1)$ in the direction $v = (1, -1, 1)$.",
+                  "For $p \\in \\mathbb{R}^3$ and $\\mathbf{v} \\in \\mathbb{R}^3_p$, let $f: \\mathbb{R}^3 \\to \\mathbb{R}$ be a function. Define the directional derivative of $f$ at $p$ in the direction $\\mathbf{v}$. Let $f = x^2 y z$. Find the directional derivative $v_p[f]$ at $p = (1, 1, 1)$ in the direction $v = (1, -1, 1)$.",
                 marks: 5,
                 solution: `### Directional Derivative
 
@@ -12146,7 +12119,7 @@ So, $v_p[f] = 2$.`,
                 id: "2a",
                 part: "2. (a)",
                 question:
-                  "What is a parametrized curve in $\mathbb{R}^3$? When is it regular? Find the reparametrization of $\alpha(t) = (r \cos t, r \sin t, ht)$ by arc length.",
+                  "What is a parametrized curve in $\\mathbb{R}^3$? When is it regular? Find the reparametrization of $\\alpha(t) = (r \\cos t, r \\sin t, ht)$ by arc length.",
                 marks: 5,
                 solution: `### Parametrized Regular Curve and Reparametrization
 
@@ -12171,7 +12144,7 @@ $$ \\beta(s) = \\alpha(t(s)) = \\left( r \\cos\\left(\\frac{s}{\\sqrt{r^2 + h^2}
                 id: "2b",
                 part: "2. (b)",
                 question:
-                  "Find the curvature and torsion of the unit speed curve $\alpha(s) = (\frac{4}{5} \cos s, 1 - \sin s, -\frac{3}{5} \cos s)$.",
+                  "Find the curvature and torsion of the unit speed curve $\\alpha(s) = (\\frac{4}{5} \\cos s, 1 - \\sin s, -\\frac{3}{5} \\cos s)$.",
                 marks: 5,
                 solution: `### Curvature and Torsion of a Unit Speed Curve
 
@@ -12207,7 +12180,7 @@ The curve is a plane curve.`,
                 id: "3a",
                 part: "3. (a)",
                 question:
-                  "Deduce Frenet-Serret apparatus for a unit speed curve in $\mathbb{R}^3$.",
+                  "Deduce Frenet-Serret apparatus for a unit speed curve in $\\mathbb{R}^3$.",
                 marks: 5,
                 solution: `### Frenet-Serret Apparatus
 
@@ -12243,7 +12216,7 @@ $\\mathbf{n}' = -\\tau(-\\mathbf{b}) + \\kappa(-\\mathbf{t}) \\implies$ **$\\mat
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Let $\beta(s)$ be a unit speed curve with $\kappa(s) > 0$. If $\tau = 0$, show that $\beta(s)$ is a plane curve.",
+                  "Let $\\beta(s)$ be a unit speed curve with $\\kappa(s) > 0$. If $\\tau = 0$, show that $\\beta(s)$ is a plane curve.",
                 marks: 5,
                 solution: `### Zero Torsion Implies Plane Curve
 
@@ -12271,7 +12244,7 @@ Thus, the position vector $\\beta(s)$ always satisfies the equation of a fixed p
                 id: "4a",
                 part: "4. (a)",
                 question:
-                  "What is a spherical curve? When is a unit speed curve with $\kappa > 0$ a spherical curve?",
+                  "What is a spherical curve? When is a unit speed curve with $\\kappa > 0$ a spherical curve?",
                 marks: 5,
                 solution: `### Spherical Curve
 
@@ -12297,7 +12270,7 @@ This differential equation relating $\\rho$ and $\\sigma$ is a necessary and suf
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "Find the equation of the osculating plane, normal plane, and rectifying plane for $\beta(s)$ at $s=0$ where $\beta(s) = (a \cos(s/c), a \sin(s/c), bs/c)$ and $c = \sqrt{a^2 '+' b^2}$.",
+                  "Find the equation of the osculating plane, normal plane, and rectifying plane for $\\beta(s)$ at $s=0$ where $\\beta(s) = (a \\cos(s/c), a \\sin(s/c), bs/c)$ and $c = \\sqrt{a^2 + b^2}$.",
                 marks: 5,
                 solution: `### Fundamental Planes for a Helix
 
@@ -12333,7 +12306,7 @@ $-by + az = 0 \\implies az - by = 0$.`,
                 id: "5a",
                 part: "5. (a)",
                 question:
-                  "Let $f: M \to N$ be a smooth function. Give definition of the differential $dF_p$. Let $f(x_1, x_2, x_3) = (x_1, x_2)$. Find the map $(df)_p$ where $p = (1, -1, 1)$.",
+                  "Let $f: M \\to N$ be a smooth function. Give definition of the differential $dF_p$. Let $f(x_1, x_2, x_3) = (x_1, x_2)$. Find the map $(df)_p$ where $p = (1, -1, 1)$.",
                 marks: 5,
                 solution: `### Differential of a Smooth Function
 
@@ -12359,7 +12332,7 @@ So $(df)_p(v_1, v_2, v_3) = (v_1, v_2)$, which is the projection onto the first 
                 id: "5b",
                 part: "5. (b)",
                 question:
-                  "Let $S = \{ (x, y, z) \in \mathbb{R}^3 | z = x^2 - y^2 \}$. Prove that $S$ is a regular surface and find its tangent plane at $(1, 1, 0)$.",
+                  "Let $S = \\{ (x, y, z) \\in \\mathbb{R}^3 | z = x^2 - y^2 \\}$. Prove that $S$ is a regular surface and find its tangent plane at $(1, 1, 0)$.",
                 marks: 5,
                 solution: `### Regular Surface and Tangent Plane
 
@@ -12386,7 +12359,7 @@ $$ 2x - 2y - z = 0 $$`,
                 id: "6a",
                 part: "6. (a)",
                 question:
-                  "Obtain the coefficients of the first fundamental form for the surface $\mathbf{x}(u, v) = (u \cos v, u \sin v, v)$.",
+                  "Obtain the coefficients of the first fundamental form for the surface $\\mathbf{x}(u, v) = (u \\cos v, u \\sin v, v)$.",
                 marks: 5,
                 solution: `### First Fundamental Form Coefficients
 
@@ -12412,7 +12385,7 @@ The first fundamental form is $ds^2 = E du^2 + 2F dudv + G dv^2 = du^2 + (1+u^2)
                 id: "6b",
                 part: "6. (b)",
                 question:
-                  "Let $S$ be a regular surface. Prove that a curve $\alpha(t)$ on $S$ is an asymptotic curve if and only if its normal curvature is zero.",
+                  "Let $S$ be a regular surface. Prove that a curve $\\alpha(t)$ on $S$ is an asymptotic curve if and only if its normal curvature is zero.",
                 marks: 5,
                 solution: `### Asymptotic Curve and Normal Curvature
 
@@ -12435,7 +12408,7 @@ Another way to view this is through the second fundamental form: $\\kappa_n = \\
                 id: "7a",
                 part: "7. (a)",
                 question:
-                  "What is the Gauss map of a regular surface? Let $S^2 = \{ (x, y, z) \in \mathbb{R}^3 : x^2 '+' y^2 '+' z^2 = 1 \}$ be the unit sphere. Find the Gauss map $N: S^2 \to S^2$.",
+                  "What is the Gauss map of a regular surface? Let $S^2 = \\{ (x, y, z) \\in \\mathbb{R}^3 : x^2 + y^2 + z^2 = 1 \\}$ be the unit sphere. Find the Gauss map $N: S^2 \\to S^2$.",
                 marks: 5,
                 solution: `### Gauss Map
 
@@ -12456,7 +12429,7 @@ Thus, the Gauss map $N: S^2 \\to S^2$ is the identity map (if we choose the outw
                 id: "7b",
                 part: "7. (b)",
                 question:
-                  "Prove that the Gaussian curvature $K$ and mean curvature $H$ are given by $K = (LN - M^2) / (EG - F^2)$ and $H = (EN - 2FM '+' GL) / 2(EG - F^2)$.",
+                  "Prove that the Gaussian curvature $K$ and mean curvature $H$ are given by $K = (LN - M^2) / (EG - F^2)$ and $H = (EN - 2FM + GL) / 2(EG - F^2)$.",
                 marks: 5,
                 solution: `### Gaussian and Mean Curvatures
 
@@ -12486,7 +12459,7 @@ $H = \\frac{1}{2} \\frac{(GL - FM) + (-FM + EN)}{EG - F^2} = \\frac{EN - 2FM + G
                 id: "8a",
                 part: "8. (a)",
                 question:
-                  "Find the Gaussian curvature and Mean curvature for a right circular cylinder $S = \{ (x, y, z) \in \mathbb{R}^3 : x^2 '+' y^2 = a^2 \}$.",
+                  "Find the Gaussian curvature and Mean curvature for a right circular cylinder $S = \\{ (x, y, z) \\in \\mathbb{R}^3 : x^2 + y^2 = a^2 \\}$.",
                 marks: 5,
                 solution: `### Curvatures of a Cylinder
 
@@ -12523,7 +12496,7 @@ $$ H = \\frac{EN - 2FM + GL}{2(EG - F^2)} = \\frac{a^2(0) - 2(0)(0) + 1(-a)}{2a^
                 id: "8b",
                 part: "8. (b)",
                 question:
-                  "Give the definition of a geodesic. Prove that the curve $\gamma(t) = (a \cos t, a \sin t, bt)$ is a geodesic on the cylinder $x^2 '+' y^2 = a^2$.",
+                  "Give the definition of a geodesic. Prove that the curve $\\gamma(t) = (a \\cos t, a \\sin t, bt)$ is a geodesic on the cylinder $x^2 + y^2 = a^2$.",
                 marks: 5,
                 solution: `### Geodesics
 
@@ -12559,7 +12532,7 @@ Since $\\gamma''(t)$ is parallel to the surface normal vector at every point, an
                 id: "1a",
                 part: "1. (a)",
                 question:
-                  "Prove that the principal normal at consecutive points do not intersect unless $\tau = 0$.",
+                  "Prove that the principal normal at consecutive points do not intersect unless $\\tau = 0$.",
                 marks: 4,
                 solution: `### Intersection of Consecutive Principal Normals
 
@@ -12580,7 +12553,7 @@ Thus, the principal normals at consecutive points intersect if and only if $\\ta
                 id: "1b",
                 part: "1. (b)",
                 question:
-                  "Find the length of the space curve $x = 2 \cos t, y = 2 \sin t, z = t$ from $t=0$ to $t=2\pi$.",
+                  "Find the length of the space curve $x = 2 \\cos t, y = 2 \\sin t, z = t$ from $t=0$ to $t=2\\pi$.",
                 marks: 3,
                 solution: `### Length of Space Curve
 
@@ -12643,7 +12616,7 @@ $$ \\tau = \\frac{[\\dot{\\mathbf{r}}, \\ddot{\\mathbf{r}}, \\dddot{\\mathbf{r}}
                 id: "2a",
                 part: "2. (a)",
                 question:
-                  "Define curvature and torsion. Let $\gamma(s)$ be a curve in $\mathbb{R}^3$. Show that if the curvature $\kappa(s) > 0$ is a constant and the torsion $\tau(s)$ is zero, the curve $\gamma(s)$ must lie on a circle.",
+                  "Define curvature and torsion. Let $\\gamma(s)$ be a curve in $\\mathbb{R}^3$. Show that if the curvature $\\kappa(s) > 0$ is a constant and the torsion $\\tau(s)$ is zero, the curve $\\gamma(s)$ must lie on a circle.",
                 marks: 5,
                 solution: `### Curve with Constant $\\kappa > 0$ and $\\tau = 0$
 
@@ -12672,7 +12645,7 @@ Since the curve also lies in a plane, the locus of points at a constant distance
                 id: "2b",
                 part: "2. (b)",
                 question:
-                  "The coordinates of a moving point at time $t$ are $x = a(t - \sin t), y = a(1 - \cos t), z = bt$. Find the unit tangent and principal normal vectors at $t = \pi/2$.",
+                  "The coordinates of a moving point at time $t$ are $x = a(t - \\sin t), y = a(1 - \\cos t), z = bt$. Find the unit tangent and principal normal vectors at $t = \\pi/2$.",
                 marks: 5,
                 solution: `### Unit Tangent and Principal Normal
 
@@ -12745,7 +12718,7 @@ Therefore, the position vector $\\mathbf{r}(s)$ always satisfies the equation of
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Determine the radius of spherical curvature of a circular helix $x = a \cos\theta, y = a \sin\theta, z = a\theta \tan\alpha$.",
+                  "Determine the radius of spherical curvature of a circular helix $x = a \\cos\\theta, y = a \\sin\\theta, z = a\\theta \\tan\\alpha$.",
                 marks: 5,
                 solution: `### Radius of Spherical Curvature of a Circular Helix
 
@@ -12811,7 +12784,7 @@ $\\mathbf{n}' = -\\tau(-\\mathbf{b}) + \\kappa(-\\mathbf{t}) = -\\kappa \\mathbf
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "Determine the nature of the curve: $x = a\cos(t) - b\sin(t)$, $y = a\sin(t) '+' b\cos(t)$, $z = c$. Show that it lies in a plane.",
+                  "Determine the nature of the curve: $x = a\\cos(t) - b\\sin(t)$, $y = a\\sin(t) + b\\cos(t)$, $z = c$. Show that it lies in a plane.",
                 marks: 4,
                 solution: `### Nature of the Curve
 
@@ -12870,7 +12843,7 @@ $$ (x-1)^2 + (y-2)^2 + (z-3)^2 - [l(x-1) + m(y-2) + n(z-3)]^2 = R^2 $$`,
                 id: "5b",
                 part: "5. (b)",
                 question:
-                  "Obtain the equation of the circular cylinder whose guiding curve is $x^2 '+' y^2 = 1, z=0$ and the generators are parallel to the vector $(1, 1, 1)$.",
+                  "Obtain the equation of the circular cylinder whose guiding curve is $x^2 + y^2 = 1, z=0$ and the generators are parallel to the vector $(1, 1, 1)$.",
                 marks: 5,
                 solution: `### Equation of Cylinder given Guiding Curve
 
@@ -12939,7 +12912,7 @@ The local shape of a surface at a point $p$ can be classified based on its Gauss
                 id: "6b",
                 part: "6. (b)",
                 question:
-                  "For the surface defined by $z = ax^2 '+' 2hxy '+' by^2$, determine the principal curvatures at the origin.",
+                  "For the surface defined by $z = ax^2 + 2hxy + by^2$, determine the principal curvatures at the origin.",
                 marks: 5,
                 solution: `### Principal Curvatures at Origin
 
@@ -13067,7 +13040,7 @@ Since $K = 1/R^2 > 0$ everywhere, every point on the sphere is an **elliptic poi
                 id: "8b",
                 part: "8. (b)",
                 question:
-                  "Discuss the properties of asymptotic lines and derive the differential equation for asymptotic lines on a surface given by $\mathbf{r}(u, v)$.",
+                  "Discuss the properties of asymptotic lines and derive the differential equation for asymptotic lines on a surface given by $\\mathbf{r}(u, v)$.",
                 marks: 5,
                 solution: `### Asymptotic Lines
 
@@ -13143,7 +13116,7 @@ Thus, we have found a convergent subsequence of $(x_n)$. Therefore, $X$ is seque
                 id: "1b",
                 part: "1. (b)",
                 question:
-                  "Show that the product space $X_1 \times X_2$ is connected iff both $X_1$ and $X_2$ are connected.",
+                  "Show that the product space $X_1 \\times X_2$ is connected iff both $X_1$ and $X_2$ are connected.",
                 marks: 5,
                 solution: `### Connectedness of Product Space
 
@@ -13204,7 +13177,7 @@ Thus, $A = \\bar{A}$, which means $A$ is closed.`,
                 id: "2b",
                 part: "2. (b)",
                 question:
-                  "Prove that a topological space $(X, \tau)$ is compact iff each filter in $X$ has a cluster point.",
+                  "Prove that a topological space $(X, \\tau)$ is compact iff each filter in $X$ has a cluster point.",
                 marks: 5,
                 solution: `### Compactness and Filters
 
@@ -13242,7 +13215,7 @@ This proves that $X$ is compact.`,
                 id: "3a",
                 part: "3. (a)",
                 question:
-                  "Let $\mathcal{F}$ be a filter on a non-empty set $X$ and let $A \subset X$. Show that there exists a filter $\mathcal{F}'$ finer than $\mathcal{F}$ such that $A \in \mathcal{F}'$ iff $A \cap F \neq \emptyset, \forall F \in \mathcal{F}$.",
+                  "Let $\\mathcal{F}$ be a filter on a non-empty set $X$ and let $A \\subset X$. Show that there exists a filter $\\mathcal{F}'$ finer than $\\mathcal{F}$ such that $A \\in \\mathcal{F}'$ iff $A \\cap F \\neq \\emptyset, \\forall F \\in \\mathcal{F}$.",
                 marks: 5,
                 solution: `### Existence of a Finer Filter
 
@@ -13356,7 +13329,7 @@ Let $X$ be a second countable, regular $T_1$-space.
                 id: "1b",
                 part: "1. (b)",
                 question:
-                  "Suppose that the class of subset $\mathcal{B}$ of $X$ satisfy the condition that for any $B_1, B_2 \in \mathcal{B}$ then $B_1 \cap B_2$ is a union of member of $\mathcal{B}$. Show that $\mathcal{B}$ is a base for topology of $X$.",
+                  "Suppose that the class of subset $\\mathcal{B}$ of $X$ satisfy the condition that for any $B_1, B_2 \\in \\mathcal{B}$ then $B_1 \\cap B_2$ is a union of member of $\\mathcal{B}$. Show that $\\mathcal{B}$ is a base for topology of $X$.",
                 marks: 4,
                 solution: `### Base Condition
 
@@ -13402,7 +13375,7 @@ A space with a countable dense subset is separable. Thus, $X$ is separable.`,
                 id: "2a",
                 part: "2. (a)",
                 question:
-                  "Draw the graph of mapping $\pi: \mathbb{R}^2 \to \mathbb{R}$ by $\pi_1(x,y) = x$ and $\pi_2(x,y) = y$. Show that $\pi_1$ and $\pi_2$ are continuous.",
+                  "Draw the graph of mapping $\\pi: \\mathbb{R}^2 \\to \\mathbb{R}$ by $\\pi_1(x,y) = x$ and $\\pi_2(x,y) = y$. Show that $\\pi_1$ and $\\pi_2$ are continuous.",
                 marks: 3,
                 solution: `### Projections are Continuous
 
@@ -13424,7 +13397,7 @@ Since the inverse image of any open set is open, $\\pi_1$ is continuous.
                 id: "2b",
                 part: "2. (b)",
                 question:
-                  "The family of interiors of all circles in $\mathbb{R}^2$ is a base for the usual topology. - Justify your answer.",
+                  "The family of interiors of all circles in $\\mathbb{R}^2$ is a base for the usual topology. - Justify your answer.",
                 marks: 3,
                 solution: `### Base of Circles
 
@@ -13441,7 +13414,7 @@ Therefore, the family of interiors of all circles in $\\mathbb{R}^2$ is a base f
                 id: "2c",
                 part: "2. (c)",
                 question:
-                  "Consider the topology $T = \{X, \emptyset, \{c,d\}, \{a,c,d\}, \{b,c,d,e\}\}$ on $X = \{a,b,c,d,e\}$. Find the interior, exterior, derived set and boundary of $A = \{a,b,c\}$.",
+                  "Consider the topology $T = \\{X, \\emptyset, \\{c,d\\}, \\{a,c,d\\}, \\{b,c,d,e\\}\\}$ on $X = \\{a,b,c,d,e\\}$. Find the interior, exterior, derived set and boundary of $A = \\{a,b,c\\}$.",
                 marks: 4,
                 solution: `### Topological Operations
 
@@ -13484,7 +13457,7 @@ Therefore, **$A' = \\{a,b,d,e\\}$**.`,
                 id: "3a",
                 part: "3. (a)",
                 question:
-                  "Define metric spaces. Determine whether or not $d(x,y) = |x-y|$ and $\delta(x,y) = \sqrt{|x-y|}$ forms metric spaces?",
+                  "Define metric spaces. Determine whether or not $d(x,y) = |x-y|$ and $\\delta(x,y) = \\sqrt{|x-y|}$ forms metric spaces?",
                 marks: 3,
                 solution: `### Metric Spaces
 
@@ -13516,7 +13489,7 @@ So, **$\\delta(x,y) = \\sqrt{|x-y|}$ forms a metric space.**`,
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Define product space. If $(X_1, T_1)$ and $(X_2, T_2)$ are any two topological spaces and let $B_1, B_2$ be two bases for $T_1$ and $T_2$ respectively with $X = X_1 \times X_2$. Then show that $B = \{b_1 \times b_2 : b_1 \in B_1, b_2 \in B_2\}$ is a base for the product topology $T$ on $X$.",
+                  "Define product space. If $(X_1, T_1)$ and $(X_2, T_2)$ are any two topological spaces and let $B_1, B_2$ be two bases for $T_1$ and $T_2$ respectively with $X = X_1 \\times X_2$. Then show that $B = \\{b_1 \\times b_2 : b_1 \\in B_1, b_2 \\in B_2\\}$ is a base for the product topology $T$ on $X$.",
                 marks: 4,
                 solution: `### Product Space and Basis
 
@@ -13542,7 +13515,7 @@ Thus, $B$ is a base for the product topology $T$.`,
                 id: "3c",
                 part: "3. (c)",
                 question:
-                  "Show that projection mapping $\pi: X \times Y \to X$ is continuous and open map.",
+                  "Show that projection mapping $\\pi: X \\times Y \\to X$ is continuous and open map.",
                 marks: 3,
                 solution: `### Projection Map Properties
 
@@ -13574,7 +13547,7 @@ Since any open set is a union of basic open sets, and the function preserves uni
                 id: "4b",
                 part: "4. (b)",
                 question:
-                  "Discuss connected set and separated sets with figure. Show that $[0,1] \cup (2,3)$ is a disconnected subset of $\mathbb{R}$.",
+                  "Discuss connected set and separated sets with figure. Show that $[0,1] \\cup (2,3)$ is a disconnected subset of $\\mathbb{R}$.",
                 marks: 4,
                 solution: `### Connected vs Separated
 
@@ -13720,7 +13693,7 @@ Thus, $A$ is compact.`,
                 id: "6c",
                 part: "6. (c)",
                 question:
-                  "Show that projection mapping $\pi: X \times Y \to X$ is continuous and open map.",
+                  "Show that projection mapping $\\pi: X \\times Y \\to X$ is continuous and open map.",
                 marks: 3,
                 solution: `### Projection maps are Continuous and Open
 
@@ -13747,7 +13720,7 @@ The image is $\\pi_X(U \\times V) = U$. Since $U$ is open in $X$, the image of t
                 id: "7b",
                 part: "7. (b)",
                 question:
-                  "Prove that product space $X = X_1 \times X_2$ is connected iff both $X_1$ and $X_2$ are connected.",
+                  "Prove that product space $X = X_1 \\times X_2$ is connected iff both $X_1$ and $X_2$ are connected.",
                 marks: 4,
                 solution: `### Connectedness of Product Space
 
@@ -13769,7 +13742,7 @@ The union of connected sets having a common point is connected. Therefore, $X$ i
                 id: "7c",
                 part: "7. (c)",
                 question:
-                  "Find out the differences between components and paths. Show that a subset of $\mathbb{R}$ is connected if and only if it is an interval.",
+                  "Find out the differences between components and paths. Show that a subset of $\\mathbb{R}$ is connected if and only if it is an interval.",
                 marks: 3,
                 solution: `### Components vs Paths, and Intervals
 
@@ -13880,7 +13853,7 @@ The usual (or standard) topology on the set of real numbers $\\mathbb{R}$ is the
                 id: "1b",
                 part: "1. (b)",
                 question:
-                  "Let $X = \{a,b,c,d,e\}$. Determine whether or not $T_1 = \{X, \emptyset, \{a\}, \{c,d\}, \{a,c,d\}, \{b,c,d,e\}\}$ forms a topological space on $X$.",
+                  "Let $X = \\{a,b,c,d,e\\}$. Determine whether or not $T_1 = \\{X, \\emptyset, \\{a\\}, \\{c,d\\}, \\{a,c,d\\}, \\{b,c,d,e\\}\\}$ forms a topological space on $X$.",
                 marks: 3,
                 solution: `### Checking a Topology
 
@@ -13909,7 +13882,7 @@ Since all three axioms are satisfied, **$T_1$ forms a topological space on $X$.*
                 id: "1c",
                 part: "1. (c)",
                 question:
-                  "Let $T_1$ and $T_2$ be any two topologies on $X$. Prove that $T_1 \cap T_2$ is also a topology on $X$. Also give two topologies $T_1$ and $T_2$ on $X = \{a,b,c\}$ so that $T_1 \cup T_2$ is not a topology on $X$.",
+                  "Let $T_1$ and $T_2$ be any two topologies on $X$. Prove that $T_1 \\cap T_2$ is also a topology on $X$. Also give two topologies $T_1$ and $T_2$ on $X = \\{a,b,c\\}$ so that $T_1 \\cup T_2$ is not a topology on $X$.",
                 marks: 4,
                 solution: `### Intersection and Union of Topologies
 
@@ -13944,7 +13917,7 @@ Because it is not closed under arbitrary unions, $T_1 \\cup T_2$ is not a topolo
                 id: "2a",
                 part: "2. (a)",
                 question:
-                  "A subset $A$ of a topological space $(X, \tau)$ is open iff $A^\circ = A$.",
+                  "A subset $A$ of a topological space $(X, \\tau)$ is open iff $A^\\circ = A$.",
                 marks: 3,
                 solution: `### Open Sets and Interior
 
@@ -13969,7 +13942,7 @@ This completes the proof.`,
                 id: "2b",
                 part: "2. (b)",
                 question:
-                  "Determine whether or not the class of open equilateral triangles and the class of open squares forms a base of the plane $\mathbb{R}^2$.",
+                  "Determine whether or not the class of open equilateral triangles and the class of open squares forms a base of the plane $\\mathbb{R}^2$.",
                 marks: 3,
                 solution: `### Bases for the Plane $\\mathbb{R}^2$
 
@@ -13984,7 +13957,7 @@ The standard basis for $\\mathbb{R}^2$ consists of all open circular disks.
                 id: "2c",
                 part: "2. (c)",
                 question:
-                  "Let $A = \{b,c,d\}$ be a subset of $X = \{a,b,c,d,e\}$. Consider the topology $\tau = \{X, \emptyset, \{a\}, \{c,d\}, \{a,c,d\}, \{b,c,d,e\}\}$, find the interior, exterior and boundary of $A$.",
+                  "Let $A = \\{b,c,d\\}$ be a subset of $X = \\{a,b,c,d,e\\}$. Consider the topology $\\tau = \\{X, \\emptyset, \\{a\\}, \\{c,d\\}, \\{a,c,d\\}, \\{b,c,d,e\\}\\}$, find the interior, exterior and boundary of $A$.",
                 marks: 4,
                 solution: `### Interior, Exterior, and Boundary
 
@@ -14036,7 +14009,7 @@ Or in terms of neighborhoods: $f$ is continuous at $x \\in X$ if for every neigh
                 id: "3b",
                 part: "3. (b)",
                 question:
-                  "Draw the graphs of the mapping $\pi: \mathbb{R}^2 \to \mathbb{R}$ by $\pi_1(x,y) = x$ and $\pi_2(x,y) = y$. Prove that $\pi_1$ and $\pi_2$ are continuous.",
+                  "Draw the graphs of the mapping $\\pi: \\mathbb{R}^2 \\to \\mathbb{R}$ by $\\pi_1(x,y) = x$ and $\\pi_2(x,y) = y$. Prove that $\\pi_1$ and $\\pi_2$ are continuous.",
                 marks: 3,
                 solution: `### Projections are Continuous
 

@@ -6,9 +6,9 @@ import { Question } from '@/data/courses';
 import { useProgress } from '@/hooks/useProgress';
 import { generateQuestionHash } from '@/utils/faq';
 
-export default function QuestionCard({ question }: { question: Question }) {
+export default function QuestionCard({ question, defaultExpanded = true }: { question: Question; defaultExpanded?: boolean }) {
   const { isQuestionMarked, toggleQuestion, isLoaded } = useProgress();
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(defaultExpanded);
   
   if (!isLoaded) return null;
 

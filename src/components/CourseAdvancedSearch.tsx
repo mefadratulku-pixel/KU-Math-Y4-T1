@@ -123,7 +123,7 @@ export default function AdvancedSearch({ course }: AdvancedSearchProps) {
                 {q._meta.session} | {q._meta.section}
               </div>
               
-              <QuestionCard question={q} />
+              <QuestionCard question={q} defaultExpanded={false} />
             </div>
           ))
         ) : (

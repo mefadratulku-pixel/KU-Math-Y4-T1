@@ -9,15 +9,15 @@ export default function Home() {
       {/* Top Navigation - Brutalist Style */}
       <nav className="border-b-2 border-black bg-white flex items-center justify-between px-6 h-16 sticky top-0 z-50">
         <div className="flex items-center h-full border-x-2 border-black">
-          <div className="px-6 h-full flex items-center justify-center border-r-2 border-black hover:bg-[#5EEAD4] cursor-pointer transition-colors bg-[#5EEAD4]">
+          <Link href="/" className="px-6 h-full flex items-center justify-center border-r-2 border-black hover:bg-[#5EEAD4] cursor-pointer transition-colors bg-[#5EEAD4]">
             <span className="font-black text-sm uppercase tracking-widest">HOME</span>
-          </div>
-          <div className="px-6 h-full flex items-center justify-center border-r-2 border-black hover:bg-[#FDE047] cursor-pointer transition-colors">
+          </Link>
+          <a href="#courses" className="px-6 h-full flex items-center justify-center border-r-2 border-black hover:bg-[#FDE047] cursor-pointer transition-colors">
             <span className="font-black text-sm uppercase tracking-widest">COURSES</span>
-          </div>
-          <div className="px-6 h-full flex items-center justify-center hover:bg-[#F9A8D4] cursor-pointer transition-colors">
+          </a>
+          <a href="#about" className="px-6 h-full flex items-center justify-center hover:bg-[#F9A8D4] cursor-pointer transition-colors">
             <span className="font-black text-sm uppercase tracking-widest">ABOUT</span>
-          </div>
+          </a>
         </div>
         <div className="flex items-center h-full border-x-2 border-black">
           <a 
@@ -33,7 +33,7 @@ export default function Home() {
 
       <div className="max-w-6xl mx-auto px-6 py-24 relative">
         {/* Hero Section */}
-        <header className="mb-32 text-center relative mt-10">
+        <header id="about" className="mb-32 text-center relative mt-10">
           <div className="absolute top-[-40px] left-1/4 -rotate-6 bg-[#86EFAC] px-4 py-2 border-2 border-black shadow-brutal z-10 font-kalam text-xl">
             Pass your exams easily!
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
         </header>
 
         {/* Courses Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div id="courses" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {coursesData.map((course, idx) => {
             const color = stickerColors[idx % stickerColors.length];
             return (

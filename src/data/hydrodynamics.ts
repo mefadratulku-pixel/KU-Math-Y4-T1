@@ -1,7 +1,7 @@
 import { Course } from './courses';
 
 export const hydrodynamicsData: Course = {
-  id: "hydrodynamics",
+  id: "hydrodynamics-notes",
   code: "Math-41XX",
   title: "Hydrodynamics",
   description: "Theoretical Hydrodynamics basic concepts, kinematics of fluid in motion, and Bernoulli's equation with applications.",
